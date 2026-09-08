@@ -1,0 +1,3 @@
+# The ground is LF (Operator ruling 2026-08-26): every text file is stored
+# and checked out LF on every machine, overriding any core.autocrlf.
+* text=auto eol=lf
