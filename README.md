@@ -17,5 +17,5 @@ Nerv_Branch03       ~/repos/Nerv_Branch03                 Technical             
 Pribnow_Box         ~/repos/Pribnow_Box  (pending)        Sigma                 alice anaheim marker
 S2_Engine           ~/repos/S2_Engine                     Science               hohenheim tensor alkahest hawkeye sheska
 SEELE_03            ~/repos/SEELE_03                      ?                     keel-lorenz
-Tiferet             ~/repos/Tiferet                       Tragwerk                     azael baraqiel kokabiel penemue sariel shamsiel
+Tiferet             ~/repos/Tiferet                       Tragwerk              azael baraqiel kokabiel penemue sariel shamsiel
 ```
