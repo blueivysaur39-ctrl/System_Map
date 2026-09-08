@@ -15,7 +15,7 @@ GTypeEquipment      C:\GTypeEquipment                     Tactical              
 HALO                ~/repos/HALO                          CENTCOM               orbital reaper
 Magi                ~/repos/Magi                          S.C. + Technical      melchior-1 balthasar-2 casper-3
 Nerv_HQ             ~/repos/Nerv_HQ                       Technical             ritsuko alaya kanuka
-Nerv_Branch03       ~/repos/Nerv_Branch03                 Technical + Tactical  ritsuko alaya kanuka kyoko langley vashti
+Nerv_Branch03       ~/repos/Nerv_Branch03                 Technical + Tactical  kyoko langley vashti
 Pribnow_Box         ~/repos/Pribnow_Box  (pending)        Sigma                 alice anaheim marker
 S2_Engine           ~/repos/S2_Engine                     Science               hohenheim tensor alkahest hawkeye sheska
 SEELE_03            ~/repos/SEELE_03                      ?                     keel-lorenz
