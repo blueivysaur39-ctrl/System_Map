@@ -159,11 +159,14 @@ ground, three lenses.
 `~/repos/Nerv_HQ` · Technical + Tactical · queues `E-NNN` ·
 `SORTIE-NNN` · `CENTRAL-NNN`
 
-**Ground.** The Eva program's mainline — Project E (the cognitive
-architecture, the center the system orbits) and Tactical's Sortie
-surface (the launch and the run). Nerv_Branch03 was severed from it
-2026-09-02; neither is a remote of the other — findings cross by the
-Operator's hand.
+**Ground.** The Eva home and the program's experimental line —
+Project E (the cognitive architecture, the center the system orbits)
+and Tactical's Sortie surface (the launch and the run). `main` only,
+ancient by ruling (R4): the code froze at the Branch-03 branch-off
+and holds the forward-moving work the program returns to.
+Nerv_Branch03 was severed from it 2026-09-02 and carries the
+production line; neither is a remote of the other — findings cross
+by the Operator's hand. Cut over to WSL2 2026-09-10.
 
 - **ritsuko** — Technical: the primary facilitator of Project E and
   the sovereign seat of the ground whole; leads Synthetic Genesis at
