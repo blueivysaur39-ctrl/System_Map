@@ -49,6 +49,7 @@ is enough).
 | kanuka | Nerv_HQ | | vashti | Nerv_Branch03 |
 | kanzlei | Executive_Command | | venator | Armament_Grid |
 | keel-lorenz | SEELE_03 | | | |
+| klinker | SEELE_03 | | | |
 | kokabiel | Tiferet | | | |
 
 ## By planet (scan)
@@ -66,7 +67,7 @@ is enough).
 | [Nerv_Branch03](#nerv_branch03) | `~/repos/Nerv_Branch03` | Technical | kyoko · langley · vashti |
 | [Pribnow_Box](#pribnow_box) | `~/repos/Pribnow_Box` (pending) | Sigma | alice · anaheim · marker |
 | [S2_Engine](#s2_engine) | `~/repos/S2_Engine` | Science | hohenheim · tensor · alkahest · hawkeye · sheska |
-| [SEELE_03](#seele_03) | `~/repos/SEELE_03` | ? | keel-lorenz |
+| [SEELE_03](#seele_03) | `~/repos/SEELE_03` | ? | keel-lorenz · klinker |
 | [Tiferet](#tiferet) | `~/repos/Tiferet` | Tragwerk | azael · baraqiel · kokabiel · penemue · sariel · shamsiel |
 
 ---
@@ -227,12 +228,17 @@ Obol is composed over what it produces.
 
 `~/repos/SEELE_03` · division `?`
 
-**Ground.** The doctrine forge, the top of the pyramid — market
-physics extracted from the Scrolls, developed as postulates,
-crystallized as doctrine. Read with fidelity downstream, never
+**Ground.** A market-physics ground research center of the doctrine
+forge — market physics extracted from the Scrolls, developed as
+postulates, crystallized as doctrine on this ground; one resident
+plus the chair's universal tie. Read with fidelity downstream, never
 authored there.
 
-- **keel-lorenz** — SEELE 01, chair of the Shadow Council.
+- **keel-lorenz** — SEELE 01, chair of the Shadow Council; the
+  universal tie, pen authority on every SEELE ground (Claude).
+- **klinker** — SEELE 03, the resident; holds the pen on this
+  ground's Monoliths (Codex, `gpt-6-astra`; Instruktion at
+  `.codex/instruktion/klinker.md`).
 
 ## Tiferet
 
