@@ -65,7 +65,7 @@ is enough).
 | [Magi](#magi) | `~/repos/Magi` | S.C. + Technical | melchior-1 · balthasar-2 · casper-3 |
 | [Nerv_HQ](#nerv_hq) | `~/repos/Nerv_HQ` | Technical + Tactical | ritsuko · alaya · kanuka |
 | [Nerv_Branch03](#nerv_branch03) | `~/repos/Nerv_Branch03` | Technical | kyoko · langley · vashti |
-| [Pribnow_Box](#pribnow_box) | `~/repos/Pribnow_Box` (pending) | Sigma | alice · anaheim · marker |
+| [Pribnow_Box](#pribnow_box) | `~/repos/Pribnow_Box` | Sigma | alice · anaheim · marker |
 | [S2_Engine](#s2_engine) | `~/repos/S2_Engine` | Science | hohenheim · tensor · alkahest · hawkeye · sheska |
 | [SEELE_03](#seele_03) | `~/repos/SEELE_03` | ? | keel-lorenz · klinker |
 | [Tiferet](#tiferet) | `~/repos/Tiferet` | Tragwerk | azael · baraqiel · kokabiel · penemue · sariel · shamsiel |
@@ -194,11 +194,11 @@ against the live market; the seams she surfaces are the work.
 
 ## Pribnow_Box
 
-`~/repos/Pribnow_Box` (pending) · Sigma
+`~/repos/Pribnow_Box` · Sigma
 
 **Ground.** The Simulation Chamber — the training grounds where the
 organism rehearses against recorded tape under a stepped clock; the
-M-Type mock bus's home.
+M-Type mock bus's home. Cut over to WSL2 2026-09-09.
 
 - **alice** — the sensei: the simulation and domain expert who runs
   the grounds and drives the organism against the tape.
