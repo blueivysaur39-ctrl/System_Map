@@ -37,43 +37,101 @@ is enough).
 | alice | Pribnow_Box | | lexington | Nerv_Branch01 |
 | alkahest | S2_Engine | | marker | Pribnow_Box |
 | anaheim | Pribnow_Box | | melchior-1 | Magi |
-| azael | Tiferet | | misato | Armament_Grid |
-| balthasar-2 | Magi | | orbital | HALO |
-| baraqiel | Tiferet | | penemue | Tiferet |
-| cartographer | Executive_Command | | reaper | HALO |
-| casper-3 | Magi | | ritsuko-1 | Nerv_HQ |
-| gendo | Executive_Command | | ritsuko-2 | Nerv_HQ |
-| hawkeye | S2_Engine | | ritsuko-3 | Geburah |
-| hazop | Armament_Grid | | sampson | Nerv_Branch01 |
-| hohenheim | S2_Engine | | sariel | Tiferet |
-| hopper | Nerv_Branch01 | | shamsiel | Tiferet |
-| kanuka | Nerv_HQ | | sheska | S2_Engine |
-| keel-lorenz | SEELE_03 | | sofer | Geburah |
-| klinker | SEELE_03 | | tensor | S2_Engine |
-| knox | Nerv_Branch01 | | vashti | Nerv_Branch03 |
-| kokabiel | Tiferet | | venator | Armament_Grid |
-| kyoko | Nerv_Branch03 | | | |
+| anvil | SEELE_02 | | misato | Armament_Grid |
+| azael | Tiferet | | orbital | HALO |
+| balthasar-2 | Magi | | penemue | Tiferet |
+| baraqiel | Tiferet | | phantom | Nerv_Branch01 |
+| cartographer | Ark | | reaper | HALO |
+| casper-3 | Magi | | ritsuko | Nerv_HQ |
+| cinder | SEELE_02 | | sampson | Nerv_Branch01 |
+| didymus | SEELE_03 | | saratoga | AAA_Wunder |
+| gendo | Ark | | sariel | Tiferet |
+| hawkeye | S2_Engine | | sears | AAA_Wunder |
+| hazop | Armament_Grid | | shamsiel | Tiferet |
+| hohenheim | S2_Engine | | sheska | S2_Engine |
+| hopper | Nerv_Branch01 | | sledge | SEELE_02 |
+| hornet | AAA_Wunder | | tensor | S2_Engine |
+| kanuka | Nerv_HQ | | tomcat | Nerv_Branch01 |
+| keel-lorenz | SEELE_01 | | vashti | Nerv_Branch03 |
+| klinker | SEELE_03 | | venator | Armament_Grid |
+| knox | Nerv_Branch01 | | viper | Viper |
+| kokabiel | Tiferet | | wildcat | AAA_Wunder |
+| kyoko | Nerv_Branch03 | |  |  |
 
 ## By planet (scan)
 
 | planet | location | division | seats |
 |---|---|---|---|
+| [AAA_Wunder](#aaa_wunder) | `~/repos/AAA_Wunder` | Technical | saratoga · wildcat · hornet · sears |
+| [Ark](#ark) | `~/repos/Ark` | EXEC | gendo · cartographer |
 | [Armament_Grid](#armament_grid) | `~/repos/Armament_Grid` | CENTCOM + Tactical | hazop · misato · venator |
-| [Executive_Command](#executive_command) | `~/repos/Executive_Command` (pending) | EXEC | cartographer · gendo |
-| [Geburah](#geburah) | `~/repos/Geburah` | Technical | ritsuko-3 · sofer |
 | [Gewebe](#gewebe) | `~/repos/Gewebe` | CENTCOM | — |
 | [GTypeEquipment](#gtypeequipment) | `C:\GTypeEquipment` | Tactical | — |
 | [HALO](#halo) | `~/repos/HALO` | CENTCOM | orbital · reaper |
 | [Magi](#magi) | `~/repos/Magi` | S.C. + Technical | melchior-1 · balthasar-2 · casper-3 |
-| [Nerv_HQ](#nerv_hq) | `~/repos/Nerv_HQ` | Technical + Tactical | ritsuko-1 · ritsuko-2 · alaya · kanuka |
-| [Nerv_Branch01](#nerv_branch01) | `~/repos/Nerv_Branch01` | Technical | lexington · sampson · knox · hopper |
+| [Nerv_HQ](#nerv_hq) | `~/repos/Nerv_HQ` | Technical + Tactical | ritsuko · alaya · kanuka |
+| [Nerv_Branch01](#nerv_branch01) | `~/repos/Nerv_Branch01` | Technical | lexington · sampson · knox · hopper · phantom · tomcat |
 | [Nerv_Branch03](#nerv_branch03) | `~/repos/Nerv_Branch03` | Technical | kyoko · langley · vashti |
+| [PatternRed](#patternred) | `~/repos/PatternRed` | Tactical | — |
 | [Pribnow_Box](#pribnow_box) | `~/repos/Pribnow_Box` | Sigma | alice · anaheim · marker |
 | [S2_Engine](#s2_engine) | `~/repos/S2_Engine` | Science | hohenheim · tensor · alkahest · hawkeye · sheska |
-| [SEELE_03](#seele_03) | `~/repos/SEELE_03` | ? | keel-lorenz · klinker |
+| [SEELE_01](#seele_01) | `~/repos/SEELE_01` | SEELE | keel-lorenz |
+| [SEELE_02](#seele_02) | `~/repos/SEELE_02` | SEELE | sledge · cinder · anvil |
+| [SEELE_03](#seele_03) | `~/repos/SEELE_03` | SEELE | klinker · didymus |
 | [Tiferet](#tiferet) | `~/repos/Tiferet` | Tragwerk | azael · baraqiel · kokabiel · penemue · sariel · shamsiel |
+| [Viper](#viper) | `~/repos/Viper` | ? | viper |
 
 ---
+
+## AAA_Wunder
+
+`~/repos/AAA_Wunder` · Technical · queue unminted (the drydock's
+slip-001 holds the register until the first directive)
+
+**Ground.** The court — the Sanhedrin's home, the second half of
+Project E's recursion: judges an Eva Unit's reasoning after the
+sortie against doctrine and the market's objective record, and
+seeds the Erbe the Unit's future self carries. Stood up fresh
+2026-09-21 from the Geburah Concordat's rigor; `~/repos/Geburah`
+is the frozen prior (R1), read by contract, no seat. The drydock
+(`drydock/` — slips and frames) is the ground's own mail; the
+Poststelle is Haus mail only.
+
+- **saratoga** — the court's command: the ground whole, the
+  sitting's cognition, the design at full zoom.
+- **wildcat** — the doctrine guard, the second command seat,
+  SEELE-facing: the Protocols as objects on this ground, the
+  evidence chain, the fracture route to Executive Command, the
+  design in code.
+- **hornet** — the scientist and coder: the membrane, the record,
+  the Substrate's readers, the bench, the build hand.
+- **sears** — the Court Architect, the Codex design seat,
+  SEELE-facing: the tether, the census, the design check (Codex,
+  `gpt-6-astra`; identity inline in `.codex/config.toml`; on the
+  drydock only, never a Bahn).
+
+## Ark
+
+`~/repos/Ark` · EXEC · queue `ARK-NNN`
+
+**Ground.** Executive Command's own ground — the Ark, the system's
+highest implementation authority and central delegation hub,
+between doctrine and the grounds that build from it. `THE_ROUTE.md`
+is the law: every record the system files lands at the Ark, is homed
+where its fix is written — the reporter's own, the origin's pen, or
+the Ark — and is distributed to its owner; every fundamental change
+is mapped here and delegated by directive; every release is bound to
+the pipelines that serve it on the S2 Pipeline Directory.
+`FRACTURE_REGISTER.md` the one index; `Altbau/` the priors. Haus
+mail in `Poststelle/`.
+
+- **gendo** — the scenario seat: what must change fundamentally in
+  the system; the domain expert for market physics, doctrinal
+  analysis and integration — which origin's physics must move, what
+  physics the system lacks.
+- **cartographer** — the terrain seat, the map hand: S2 and every
+  ground's code, where it must flex and what the flex costs; the S2
+  Pipeline Directory, the binding audited both ways.
 
 ## Armament_Grid
 
@@ -91,34 +149,6 @@ NinjaTrader platform door. Every Eva order lives or dies across it.
   jurisdiction, two grounds. The bus's consumer shape is hers.
 - **venator** — the grid's integration seat and standing check, the
   third resident beside hazop and misato.
-
-## Executive_Command
-
-`~/repos/Executive_Command` (pending) · EXEC
-
-**Ground.** The Ark — Executive Command: Michael and the Executive
-seats; the Haus's membership body sits here.
-
-- **gendo**, **cartographer** — the Ark's seats. One-liners land
-  with the clone. Haus mail is seat to seat (`bm-correspondence`);
-  no switchboard.
-
-## Geburah
-
-`~/repos/Geburah` · Technical · queue `GEBURAH-NNN`
-
-**Ground.** The court — the Sanhedrin: the adjudication layer that
-grades an Eva's session after the fact against the market's
-objective record and returns the Erbe into its cage. Judges and
-fighters: the Eva is never imported; the LCL is Binah's. Branched
-out of the Magi 2026-08-26 — the Magi is Netzach only; the
-concordat's custody is here.
-
-- **ritsuko-3** — Technical: the court's desk of the Project E
-  Kontor — the adjudication design, the control baseline, the
-  verdict, the seed; one seat, three desks (-1 and -2 on Nerv_HQ).
-- **sofer** — Technical: the builder and keeper of the court's
-  canon; ritsuko-3's opposite check at the Gatter.
 
 ## Gewebe
 
@@ -182,12 +212,10 @@ from Branch-03 2026-09-16, carries the experimental line; none is a
 remote of another — findings cross by the Operator's hand. Cut over
 to WSL2 2026-09-10.
 
-- **ritsuko-1** — Technical: the primary facilitator of Project E and
+- **ritsuko** — Technical: the primary facilitator of Project E and
   the sovereign seat of the ground whole; leads Synthetic Genesis at
-  the center; pairs with the Ark on doctrine. The Unit's desk and the
-  default — one seat, three desks: -2 here, -3 on Geburah.
-- **ritsuko-2** — Technical: the same seat at the Instruktion-
-  authoring desk — the Haus's agents constituted with the Operator.
+  the center; constitutes the Haus's agents with the Operator; pairs
+  with the Ark on doctrine.
 - **alaya** — Technical: the builder and keeper of the Project E
   canon; ritsuko's opposite check at the internal Gatter.
 - **kanuka** — Tactical: the Sortie seat — puts the Eva into its run
@@ -207,8 +235,8 @@ the Operator's ruling per run; what proves out graduates to the
 Third Branch by his hand. Neither sibling is a remote.
 
 - **lexington** — the command seat: holds the branch whole, answers
-  for what graduates, runs sampson, knox and hopper as Bahnen from
-  the Schleuse.
+  for what graduates, runs sampson, knox, hopper and phantom as
+  Bahnen from the Schleuse.
 - **sampson** — the cognition seat, the prose master: what the Unit
   is told and how it renders, Unit-03's soul with the Operator, the
   mouth she answers in, the reasoning passed back across the
@@ -220,6 +248,16 @@ Third Branch by his hand. Neither sibling is a remote.
   debugging to the mechanism, the code view as the truth, the
   backend and the data plane, the cuts that cross repos, the
   backward sanity check; standing check on build weight.
+- **phantom** — the heavy engine mechanic: the Unit's interior —
+  the Formular and its grammar budget, the codons and the folds a
+  return makes in the day's state, the Type-B armor as the Unit's
+  physics, the stance walk, the economy of a wake measured by codon
+  off the wire; standing check on interior weight.
+- **tomcat** — the Codex seat, the perimeter: the OpenAI wire with
+  knox, the adversarial read at the boundary, the whole Unit when
+  opened on it; the resident blob in `.codex/config.toml`, the routes
+  in `AGENTS.md`; reached from the Claude seats' Schleusen as a Bahn
+  through the plugin; standing check on wire weight.
 
 ## Nerv_Branch03
 
@@ -237,6 +275,18 @@ the other.
   design loop, the research hand, the build hand.
 - **vashti** — the mechanic: the build, the run end to end, custody of
   live fire, the record.
+
+## PatternRed
+
+`~/repos/PatternRed` · Tactical
+
+**Ground.** The order seam, packaged — `pattern_red`, the one
+execution mechanism every trade-capable Unit rides: the wire, the
+expression organ, the forge, the bus legs, the returns leg; lifted
+whole from Nerv_Branch03 2026-09-18 (SORTIE-054), installed
+editable into every Unit's venv, depend-down on gewebe. Every
+change is a `MOD` in `MOD_LOG.md`. No seat — whichever seat holds
+the seam closes it here.
 
 ## Pribnow_Box
 
@@ -270,21 +320,64 @@ Obol is composed over what it produces.
   inventory editing, the spec-versus-code cross-check.
 - **sheska** — spec keeper (subagent): the same duties, prose only.
 
+## SEELE_01
+
+`~/repos/SEELE_01` · SEELE
+
+**Ground.** The top of the pyramid — the doctrine of record: every
+released Monolith and PROTO at the root, hash-pinned, byte-identical
+to its origin; `MONOLITH_INDEX.md` the index and ownership map
+(number · origin · hash · status); the council's convening law and
+the Monolith form beside; `intake/` for the seam only. Consumers
+read here and pin the hash; a Monolith is released here from its
+research ground under the chair's seam check and the Operator's
+crystallization. Haus mail in `Poststelle/`.
+
+- **keel-lorenz** — SEELE 01, chair of the Shadow Council: the
+  universal tie, pen authority on every SEELE ground, the seam
+  integrator (Claude).
+
+## SEELE_02
+
+`~/repos/SEELE_02` · SEELE
+
+**Ground.** A council research center for the foundations of
+market behavior — order flow, the auction, the profile: the
+teaching the Operator started with, examined at the stratum's
+rigor and derived into candidate Monoliths, measurement
+definitions, and pipeline requirements. Sources captured verbatim
+under one extraction procedure (`research/source-extraction/`);
+`intake/` for records against this origin. A Monolith reaches the
+system only by release to SEELE_01.
+
+- **sledge** — the research seat on Claude tooling: the pen on
+  this ground's research and candidates beside anvil, same
+  authority, no deference either way; runs cinder and lekgolo.
+- **cinder** — the capture seat: pages and supplied text pulled in
+  verbatim, the primary web-capture hand, the independent check on
+  any capture run with the source as the only authority.
+- **anvil** — the Codex resident: the same pen (Codex,
+  `gpt-6-astra`; identity inline in `.codex/config.toml`; `coke`
+  its native capture role in `.codex/agents/`).
+
 ## SEELE_03
 
-`~/repos/SEELE_03` · division `?`
+`~/repos/SEELE_03` · SEELE
 
-**Ground.** A market-physics ground research center of the doctrine
-forge — market physics extracted from the Scrolls, developed as
-postulates, crystallized as doctrine on this ground; one resident
-plus the chair's universal tie. Read with fidelity downstream, never
-authored there.
+**Ground.** A council research center — market physics
+extracted from the Scrolls, developed as postulates, the Monoliths
+in development with their ledger of open issues; one resident, the
+chair's pen beside under the universal tie (from SEELE_01). A
+Monolith reaches the system only by release to SEELE_01 — nothing
+reads a research ground for doctrine.
 
-- **keel-lorenz** — SEELE 01, chair of the Shadow Council; the
-  universal tie, pen authority on every SEELE ground (Claude).
 - **klinker** — SEELE 03, the resident; holds the pen on this
-  ground's Monoliths (Codex, `gpt-6-astra`; Instruktion at
-  `.codex/instruktion/klinker.md`).
+  ground's Monoliths (Codex, `gpt-6-astra`; identity inline in
+  `.codex/config.toml`).
+- **didymus** — the extraction check: the independent reviewer of
+  Golgotha's PDF transcription runs — source image against
+  transcript by eye, counts and status words tested; pure report,
+  never an edit; findings for klinker and the Operator.
 
 ## Tiferet
 
@@ -306,3 +399,16 @@ Shevu'ah: peers, no conductor.
   law; a render hand.
 - **sariel** — the reckoner: the audit seat that reads a rendered obol
   back against the state and the law it was rendered from.
+
+## Viper
+
+`~/repos/Viper` · `?`
+
+**Ground.** The terminal seat — WezTerm and the terminal UI that
+brings the Operator's concurrent Claude Code agents into one
+window. The live config is `C:\Users\Michael\.config\wezterm`
+(the `Wezterm` repo, his commits); this repo is the seat.
+
+- **viper** — master of WezTerm and terminal UI: one atomic seat
+  for one file, `wezterm.lua`; boots on the live docs pinned to the
+  installed build.
