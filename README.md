@@ -33,30 +33,32 @@ is enough).
 
 | name | planet | | name | planet |
 |---|---|---|---|---|
-| alaya | Nerv_HQ | | langley | Nerv_Branch03 |
-| alice | Pribnow_Box | | lexington | Nerv_Branch01 |
-| alkahest | S2_Engine | | marker | Pribnow_Box |
-| anaheim | Pribnow_Box | | melchior-1 | Magi |
-| anvil | SEELE_02 | | misato | Armament_Grid |
-| azael | Tiferet | | orbital | HALO |
-| balthasar-2 | Magi | | penemue | Tiferet |
-| baraqiel | Tiferet | | phantom | Nerv_Branch01 |
-| cartographer | Ark | | reaper | HALO |
-| casper-3 | Magi | | ritsuko | Nerv_HQ |
-| cinder | SEELE_02 | | sampson | Nerv_Branch01 |
+| alaya | Nerv_HQ | | kokabiel | Tiferet |
+| alice | Pribnow_Box | | kyoko | Nerv_Branch03 |
+| alkahest | S2_Engine | | langley | Nerv_Branch03 |
+| amestris | S2_Engine | | lexington | Nerv_Branch01 |
+| anaheim | Pribnow_Box | | marker | Pribnow_Box |
+| anvil | SEELE_02 | | melchior-1 | Magi |
+| azael | Tiferet | | metron | SEELE_03 |
+| balthasar-2 | Magi | | misato | Armament_Grid |
+| baraqiel | Tiferet | | orbital | HALO |
+| caliper | SEELE_02 | | penemue | Tiferet |
+| cartographer | Ark | | phantom | Nerv_Branch01 |
+| casper-3 | Magi | | reaper | HALO |
+| cinder | SEELE_02 | | ritsuko | Nerv_HQ |
+| coke | SEELE_02 | | sampson | Nerv_Branch01 |
 | didymus | SEELE_03 | | saratoga | AAA_Wunder |
 | gendo | Ark | | sariel | Tiferet |
-| hawkeye | S2_Engine | | sears | AAA_Wunder |
-| hazop | Armament_Grid | | shamsiel | Tiferet |
-| hohenheim | S2_Engine | | sheska | S2_Engine |
-| hopper | Nerv_Branch01 | | sledge | SEELE_02 |
-| hornet | AAA_Wunder | | tensor | S2_Engine |
-| kanuka | Nerv_HQ | | tomcat | Nerv_Branch01 |
-| keel-lorenz | SEELE_01 | | vashti | Nerv_Branch03 |
-| klinker | SEELE_03 | | venator | Armament_Grid |
-| knox | Nerv_Branch01 | | viper | Viper |
-| kokabiel | Tiferet | | wildcat | AAA_Wunder |
-| kyoko | Nerv_Branch03 | |  |  |
+| golgotha | SEELE_03 | | sears | AAA_Wunder |
+| hawkeye | S2_Engine | | shamsiel | Tiferet |
+| hazop | Armament_Grid | | sheska | S2_Engine |
+| hohenheim | S2_Engine | | sledge | SEELE_02 |
+| hopper | Nerv_Branch01 | | tensor | S2_Engine |
+| hornet | AAA_Wunder | | tomcat | Nerv_Branch01 |
+| kanuka | Nerv_HQ | | vashti | Nerv_Branch03 |
+| keel-lorenz | SEELE_01 | | venator | Armament_Grid |
+| klinker | SEELE_03 | | viper | Viper |
+| knox | Nerv_Branch01 | | wildcat | AAA_Wunder |
 
 ## By planet (scan)
 
@@ -74,10 +76,10 @@ is enough).
 | [Nerv_Branch03](#nerv_branch03) | `~/repos/Nerv_Branch03` | Technical | kyoko · langley · vashti |
 | [PatternRed](#patternred) | `~/repos/PatternRed` | Tactical | — |
 | [Pribnow_Box](#pribnow_box) | `~/repos/Pribnow_Box` | Sigma | alice · anaheim · marker |
-| [S2_Engine](#s2_engine) | `~/repos/S2_Engine` | Science | hohenheim · tensor · alkahest · hawkeye · sheska |
+| [S2_Engine](#s2_engine) | `~/repos/S2_Engine` | Science | hohenheim · amestris · tensor · alkahest · hawkeye · sheska |
 | [SEELE_01](#seele_01) | `~/repos/SEELE_01` | SEELE | keel-lorenz |
-| [SEELE_02](#seele_02) | `~/repos/SEELE_02` | SEELE | sledge · cinder · anvil |
-| [SEELE_03](#seele_03) | `~/repos/SEELE_03` | SEELE | klinker · didymus |
+| [SEELE_02](#seele_02) | `~/repos/SEELE_02` | SEELE | sledge · cinder · anvil · caliper · coke |
+| [SEELE_03](#seele_03) | `~/repos/SEELE_03` | SEELE | klinker · didymus · metron · golgotha |
 | [Tiferet](#tiferet) | `~/repos/Tiferet` | Tragwerk | azael · baraqiel · kokabiel · penemue · sariel · shamsiel |
 | [Viper](#viper) | `~/repos/Viper` | ? | viper |
 
@@ -312,6 +314,9 @@ Obol is composed over what it produces.
 
 - **hohenheim** — the resident Faktor, the Meister of the derivation
   ground; the repo's design loop.
+- **amestris** — the Sovereign Perimeter: the engine whole beside
+  hohenheim, from its border — admission, binding, the options
+  surface.
 - **tensor** — the Chain Meister: the Schwab options chain and the
   pipelines that mold to it.
 - **alkahest** — the Universal Solvent: the heavy synthesizer and
@@ -357,8 +362,15 @@ system only by release to SEELE_01.
   verbatim, the primary web-capture hand, the independent check on
   any capture run with the source as the only authority.
 - **anvil** — the Codex resident: the same pen (Codex,
-  `gpt-6-astra`; identity inline in `.codex/config.toml`; `coke`
-  its native capture role in `.codex/agents/`).
+  `gpt-6-astra`; identity inline in `.codex/config.toml`).
+- **caliper** — the measurement engineer (Codex native role,
+  dispatched by anvil): bounded source admission, computation,
+  replay, tests, code-to-Eva render fidelity; builds its allocation
+  on S2's cars; no further delegation.
+- **coke** — the capture instrument (Codex native role, dispatched
+  by anvil): verbatim source capture — site discovery, page-faithful
+  capture with retained bytes and locators, the distinct
+  verification pass; never authors doctrine.
 
 ## SEELE_03
 
@@ -378,6 +390,14 @@ reads a research ground for doctrine.
   Golgotha's PDF transcription runs — source image against
   transcript by eye, counts and status words tested; pure report,
   never an edit; findings for klinker and the Operator.
+- **metron** — the measurement engineer (Codex native role,
+  dispatched by klinker): bounded source admission, computation,
+  replay, tests, code-to-Eva render fidelity; builds its allocation
+  on S2's cars; no further delegation.
+- **golgotha** — the PDF transcription instrument (Codex native
+  role, dispatched by klinker, on the Operator's request): page-faithful
+  Markdown with LaTeX math, visual equation verification, provenance;
+  extraction only, never interpretation.
 
 ## Tiferet
 
@@ -385,20 +405,24 @@ reads a research ground for doctrine.
 
 **Ground.** The composition ground of the Eva's data-IN — the Obol,
 the payload a Unit reasons from. The Watcher band under the
-Shevu'ah: peers, no conductor.
+Shevu'ah: kokabiel leads; every Watcher rides the others' Sha'arim.
 
-- **azael** — the smith of the band: builds and proves everything the
-  payload path stands on; the addressing.
-- **baraqiel** — render hand, the emptiness school: S2 state rendered
-  into Eva-legible candidates by yohaku (negative space).
-- **shamsiel** — render hand, the program school: one invariant
-  grammar.
-- **kokabiel** — keeper of Mazzaroth, the star-map corpus over S2
-  derived state; a render hand.
+- **kokabiel** — the lead: keeper of Mazzaroth, the star-map corpus
+  over S2 derived state; the render's arrangement designed here;
+  the TIF-NNN queue.
 - **penemue** — keeper of the obol contract, the payload's written
-  law; a render hand.
-- **sariel** — the reckoner: the audit seat that reads a rendered obol
-  back against the state and the law it was rendered from.
+  law; the primary render hand — prose, quality, the first draft.
+- **shamsiel** — render mechanics, the program: the form law and the
+  composition's grammar — what a render can be told, as rules a
+  builder presses.
+- **baraqiel** — render mechanics, the vessel: what a render costs
+  and carries — the token economy, the density, the cut, the
+  atom's carry.
+- **azael** — the smith: builds and proves everything the payload
+  path stands on — the addressing, the gates, the driver, the suite.
+- **sariel** — the reckoner: the accuracy check that reads a rendered
+  obol back against the state and the law it was rendered from;
+  SEALED or HELD.
 
 ## Viper
 
