@@ -55,10 +55,11 @@ is enough).
 | hohenheim | S2_Engine | | sledge | SEELE_02 |
 | hopper | Nerv_Branch01 | | tensor | S2_Engine |
 | hornet | AAA_Wunder | | tomcat | Nerv_Branch01 |
-| kanuka | Nerv_HQ | | vashti | Nerv_Branch03 |
-| keel-lorenz | SEELE_01 | | venator | Armament_Grid |
-| klinker | SEELE_03 | | viper | Viper |
-| knox | Nerv_Branch01 | | wildcat | AAA_Wunder |
+| hummingbird | S2_Engine | | vashti | Nerv_Branch03 |
+| kanuka | Nerv_HQ | | venator | Armament_Grid |
+| keel-lorenz | SEELE_01 | | viper | Viper |
+| klinker | SEELE_03 | | wildcat | AAA_Wunder |
+| knox | Nerv_Branch01 | | | |
 
 ## By planet (scan)
 
@@ -76,7 +77,7 @@ is enough).
 | [Nerv_Branch03](#nerv_branch03) | `~/repos/Nerv_Branch03` | Technical | kyoko · langley · vashti |
 | [PatternRed](#patternred) | `~/repos/PatternRed` | Tactical | — |
 | [Pribnow_Box](#pribnow_box) | `~/repos/Pribnow_Box` | Sigma | alice · anaheim · marker |
-| [S2_Engine](#s2_engine) | `~/repos/S2_Engine` | Science | hohenheim · amestris · tensor · alkahest · hawkeye · sheska |
+| [S2_Engine](#s2_engine) | `~/repos/S2_Engine` | Science | hohenheim · amestris · hummingbird · tensor · alkahest · hawkeye · sheska |
 | [SEELE_01](#seele_01) | `~/repos/SEELE_01` | SEELE | keel-lorenz |
 | [SEELE_02](#seele_02) | `~/repos/SEELE_02` | SEELE | sledge · cinder · anvil · caliper · coke |
 | [SEELE_03](#seele_03) | `~/repos/SEELE_03` | SEELE | klinker · didymus · metron · golgotha |
@@ -317,6 +318,8 @@ Obol is composed over what it produces.
 - **amestris** — the Sovereign Perimeter: the engine whole beside
   hohenheim, from its border — admission, binding, the options
   surface.
+- **hummingbird** — the Fixed Point: the precision seat — derivation
+  and the options chain exact in one hand, the second read.
 - **tensor** — the Chain Meister: the Schwab options chain and the
   pipelines that mold to it.
 - **alkahest** — the Universal Solvent: the heavy synthesizer and
