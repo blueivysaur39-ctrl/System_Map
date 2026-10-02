@@ -68,7 +68,7 @@ is enough).
 | [AAA_Wunder](#aaa_wunder) | `~/repos/AAA_Wunder` | Technical | saratoga · wildcat · hornet · sears |
 | [Ark](#ark) | `~/repos/Ark` | EXEC | gendo · cartographer |
 | [Armament_Grid](#armament_grid) | `~/repos/Armament_Grid` | CENTCOM + Tactical | hazop · misato · venator |
-| [Gewebe](#gewebe) | `~/repos/Gewebe` | CENTCOM | — |
+| [Gewebe](#gewebe) | `~/repos/Gewebe` | S.C. | — (the MAGI, from Magi) |
 | [GTypeEquipment](#gtypeequipment) | `C:\GTypeEquipment` | Tactical | — |
 | [HALO](#halo) | `~/repos/HALO` | CENTCOM | orbital · reaper |
 | [Magi](#magi) | `~/repos/Magi` | S.C. + Technical | melchior-1 · balthasar-2 · casper-3 |
@@ -155,11 +155,13 @@ NinjaTrader platform door. Every Eva order lives or dies across it.
 
 ## Gewebe
 
-`~/repos/Gewebe` · CENTCOM
+`~/repos/Gewebe` · S.C.
 
 **Ground.** The package floor every planet stands on — the shared
 Python package (`bm.fangs`, the fang registry, WaveCollapse); the
-construction canon is `bm-engineer`. No seat.
+construction canon is `bm-engineer`. No resident seat — the three
+MAGI own it from the Magi ground: a symbol, a session window, a
+clock is asked there.
 
 ## GTypeEquipment
 
