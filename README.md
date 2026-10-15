@@ -39,7 +39,7 @@ is enough).
 | amestris | S2_Engine | | lexington | Nerv_Branch01 |
 | anaheim | Pribnow_Box | | marker | Pribnow_Box |
 | anvil | SEELE_02 | | melchior-1 | Magi |
-| azael | Tiferet | | metron | SEELE_03 |
+| azael | Tiferet | | metron | Project2501 |
 | balthasar-2 | Magi | | misato | Armament_Grid |
 | baraqiel | Tiferet | | orbital | HALO |
 | caliper | SEELE_02 | | penemue | Tiferet |
@@ -59,7 +59,9 @@ is enough).
 | kanuka | Nerv_HQ | | venator | Armament_Grid |
 | keel-lorenz | SEELE_01 | | viper | Viper |
 | klinker | SEELE_03 | | wildcat | AAA_Wunder |
-| knox | Nerv_Branch01 | | | |
+| knox | Nerv_Branch01 | | xerxes | S2_Engine |
+| arakiel | Ghostline_01 | | tamiel | Ghostline_01 |
+| ezeqeel | Ghostline_01 | | turiel | Ghostline_01 |
 
 ## By planet (scan)
 
@@ -69,18 +71,20 @@ is enough).
 | [Ark](#ark) | `~/repos/Ark` | EXEC | gendo · cartographer |
 | [Armament_Grid](#armament_grid) | `~/repos/Armament_Grid` | CENTCOM + Tactical | hazop · misato · venator |
 | [Gewebe](#gewebe) | `~/repos/Gewebe` | S.C. | — (the MAGI, from Magi) |
+| [Ghostline_01](#ghostline_01) | `~/repos/Ghostline_01` | ? | arakiel · tamiel · ezeqeel · turiel |
 | [GTypeEquipment](#gtypeequipment) | `C:\GTypeEquipment` | Tactical | — |
 | [HALO](#halo) | `~/repos/HALO` | CENTCOM | orbital · reaper |
-| [Magi](#magi) | `~/repos/Magi` | S.C. + Technical | melchior-1 · balthasar-2 · casper-3 |
+| [Magi](#magi) | `~/repos/Magi_1` | S.C. + Technical | melchior-1 · balthasar-2 · casper-3 |
 | [Nerv_HQ](#nerv_hq) | `~/repos/Nerv_HQ` | Technical + Tactical | ritsuko · alaya · kanuka |
 | [Nerv_Branch01](#nerv_branch01) | `~/repos/Nerv_Branch01` | Technical | lexington · sampson · knox · hopper · phantom · tomcat |
 | [Nerv_Branch03](#nerv_branch03) | `~/repos/Nerv_Branch03` | Technical | kyoko · langley · vashti |
 | [PatternRed](#patternred) | `~/repos/PatternRed` | Tactical | — |
 | [Pribnow_Box](#pribnow_box) | `~/repos/Pribnow_Box` | Sigma | alice · anaheim · marker |
-| [S2_Engine](#s2_engine) | `~/repos/S2_Engine` | Science | hohenheim · amestris · hummingbird · tensor · alkahest · hawkeye · sheska |
+| [Project2501](#project2501) | `~/repos/Project2501` | Science | metron |
+| [S2_Engine](#s2_engine) | `~/repos/S2_Engine` | Science | hohenheim · amestris · xerxes · hummingbird · tensor · alkahest · hawkeye · sheska |
 | [SEELE_01](#seele_01) | `~/repos/SEELE_01` | SEELE | keel-lorenz |
 | [SEELE_02](#seele_02) | `~/repos/SEELE_02` | SEELE | sledge · cinder · anvil · caliper · coke |
-| [SEELE_03](#seele_03) | `~/repos/SEELE_03` | SEELE | klinker · didymus · metron · golgotha |
+| [SEELE_03](#seele_03) | `~/repos/SEELE_03` | SEELE | klinker · didymus · golgotha |
 | [Tiferet](#tiferet) | `~/repos/Tiferet` | Tragwerk | azael · baraqiel · kokabiel · penemue · sariel · shamsiel |
 | [Viper](#viper) | `~/repos/Viper` | ? | viper |
 
@@ -163,6 +167,29 @@ construction canon is `bm-engineer`. No resident seat — the three
 MAGI own it from the Magi ground: a symbol, a session window, a
 clock is asked there.
 
+## Ghostline_01
+
+`~/repos/Ghostline_01` · Branch-01's renderer, `ghostline`.
+
+**Ground.** Reads Project2501's sealed objects by path at a digest, sponsor
+profiles and Nerv's context; admits and renders `obol-task-1`, then writes
+the card and binding receipt into Unit-03's inbox. Fresh implementation under
+`Ark/Handoff/GHOSTLINE_01.md`; the Ark coordinates the seam check. Local
+navigation and queue: `AGENTS.md`, `CONTINUITY.md`.
+
+- **arakiel** — native Codex main agent; fidelity from source meaning through
+  rendered expression, typed binding and the receiving information set.
+  Identity in `.codex/config.toml`; moved from Tiferet with these native roles:
+- **tamiel** — contract and meaning research; evidence, wording proposals and
+  acceptance cases.
+- **ezeqeel** — composition and delivery engineering; allocated implementation
+  and proof through its consuming path.
+- **turiel** — independent verification; source/body/envelope reconciliation,
+  isolation, reproduced failures and explicit coverage.
+
+Tiferet retains its Claude Watchers and Unit-02 `tikkun`. Klinker at SEELE_03
+owns sponsor admission and exact Eva expression; Metron owns the deriver.
+
 ## GTypeEquipment
 
 `C:\GTypeEquipment` — `/mnt/c/GTypeEquipment` from WSL, read-only ·
@@ -189,7 +216,7 @@ Munitionsaufzug.
 
 ## Magi
 
-`~/repos/Magi` · S.C. + Technical
+`~/repos/Magi_1` (renamed from `Magi` 2026-10-13 15:46 MDT; import name `magi`; the one engine — THE_CHARTER r4 line 2) · S.C. + Technical
 
 **Ground.** The integrator and sole integration environment;
 orchestration and the schedule — where Netzach fires. Three MAGI, one
@@ -308,6 +335,22 @@ M-Type mock bus's home. Cut over to WSL2 2026-09-09.
 - **marker** — the sweeper: the prose hand that tidies after builds;
   sweeps findings that belong elsewhere out of the EHM.
 
+## Project2501
+
+`~/repos/Project2501` · Branch-01's derivation provider, `signalnet`.
+
+**Ground.** Fresh derivation under `Ark/THE_CHARTER.md` and
+`Ark/Handoff/PROJECT2501.md`. Writes its own state and sealed history;
+Ghostline_01 reads by path at a digest, and Nerv_Branch01/magi_4 fires the
+installed provider. The package is not yet built. `AGENTS.md` supplies
+navigation; `CONTINUITY.md` holds the local queue.
+
+- **metron** — resident Codex main agent; measurement engineering,
+  source admission conformance, calculations, publication and replay/test
+  proof. Identity in `.codex/config.toml`; works directly with Klinker at
+  SEELE_03 through `codex_peers`. Klinker owns scientific meaning and exact
+  Eva expression; the Ark coordinates integration and seam-checks.
+
 ## S2_Engine
 
 `~/repos/S2_Engine` · Science
@@ -320,6 +363,9 @@ Obol is composed over what it produces.
 - **amestris** — the Sovereign Perimeter: the engine whole beside
   hohenheim, from its border — admission, binding, the options
   surface.
+- **xerxes** — the Complete Transition: the engine whole beside
+  amestris, as it moves — every cut from one whole tree to the next,
+  nothing dangling; a car run in parallel with hers.
 - **hummingbird** — the Fixed Point: the precision seat — derivation
   and the options chain exact in one hand, the second read.
 - **tensor** — the Chain Meister: the Schwab options chain and the
@@ -395,10 +441,6 @@ reads a research ground for doctrine.
   Golgotha's PDF transcription runs — source image against
   transcript by eye, counts and status words tested; pure report,
   never an edit; findings for klinker and the Operator.
-- **metron** — the measurement engineer (Codex native role,
-  dispatched by klinker): bounded source admission, computation,
-  replay, tests, code-to-Eva render fidelity; builds its allocation
-  on S2's cars; no further delegation.
 - **golgotha** — the PDF transcription instrument (Codex native
   role, dispatched by klinker, on the Operator's request): page-faithful
   Markdown with LaTeX math, visual equation verification, provenance;
