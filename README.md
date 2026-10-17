@@ -20,10 +20,12 @@ is enough).
 - **Location:** `~/repos/<planet>`. One exception: `C:\GTypeEquipment`
   (the bus) stays on Windows — `/mnt/c/GTypeEquipment` from WSL,
   read-only; written only through the Munitionsaufzug (the hoist).
-- **Agents:** `<location>/.claude/agents/<name>.md`. A seat is opened
-  on its own ground (`claude --agent <name>` in that repo), never from
-  another planet's tree. A finding for another ground crosses through
-  the Operator or Haus mail (the receiver's `Poststelle/`).
+- **Agents:** Claude identities are at `<location>/.claude/agents/<name>.md`;
+  native Codex identities are in that ground's `.codex/config.toml`.
+  Open a seat on its own ground. Cross-ground work uses `bm-correspondence`:
+  a drop at `~/repos/Ark/Poststelle/`, assignment and state in its Gehirn.
+  The Operator is never the courier; foreign mailrooms and queue dispatch
+  are retired. Local queues stay with their owning seats.
 - **`pending`** = not yet cloned to WSL; the location is where it
   will stand.
 - **Divisions:** CENTCOM · Tactical · Technical · Science · S.C. ·
@@ -42,7 +44,7 @@ is enough).
 | azael | Tiferet | | metron | Project2501 |
 | balthasar-2 | Magi | | misato | Armament_Grid |
 | baraqiel | Tiferet | | orbital | HALO |
-| caliper | SEELE_02 | | penemue | Tiferet |
+| caliper | Project2502 | | penemue | Tiferet |
 | cartographer | Ark | | phantom | Nerv_Branch01 |
 | casper-3 | Magi | | reaper | HALO |
 | cinder | SEELE_02 | | ritsuko | Nerv_HQ |
@@ -60,18 +62,20 @@ is enough).
 | keel-lorenz | SEELE_01 | | viper | Viper |
 | klinker | SEELE_03 | | wildcat | AAA_Wunder |
 | knox | Nerv_Branch01 | | xerxes | S2_Engine |
-| arakiel | Ghostline_01 | | tamiel | Ghostline_01 |
-| ezeqeel | Ghostline_01 | | turiel | Ghostline_01 |
+| aramaki | Ark | | borma | Ark |
+| 0xWIRE | Ghostline_01 | | splitter | Ghostline_01 |
+| bluebox | Ghostline_01 | | vblank | Ghostline_01 |
+| razor | Project2502 | | icebreaker | Project2502 |
 
 ## By planet (scan)
 
 | planet | location | division | seats |
 |---|---|---|---|
 | [AAA_Wunder](#aaa_wunder) | `~/repos/AAA_Wunder` | Technical | saratoga · wildcat · hornet · sears |
-| [Ark](#ark) | `~/repos/Ark` | EXEC | gendo · cartographer |
+| [Ark](#ark) | `~/repos/Ark` | EXEC | gendo · cartographer · aramaki |
 | [Armament_Grid](#armament_grid) | `~/repos/Armament_Grid` | CENTCOM + Tactical | hazop · misato · venator |
 | [Gewebe](#gewebe) | `~/repos/Gewebe` | S.C. | — (the MAGI, from Magi) |
-| [Ghostline_01](#ghostline_01) | `~/repos/Ghostline_01` | ? | arakiel · tamiel · ezeqeel · turiel |
+| [Ghostline_01](#ghostline_01) | `~/repos/Ghostline_01` | ? | 0xWIRE · splitter · bluebox · vblank |
 | [GTypeEquipment](#gtypeequipment) | `C:\GTypeEquipment` | Tactical | — |
 | [HALO](#halo) | `~/repos/HALO` | CENTCOM | orbital · reaper |
 | [Magi](#magi) | `~/repos/Magi_1` | S.C. + Technical | melchior-1 · balthasar-2 · casper-3 |
@@ -81,9 +85,10 @@ is enough).
 | [PatternRed](#patternred) | `~/repos/PatternRed` | Tactical | — |
 | [Pribnow_Box](#pribnow_box) | `~/repos/Pribnow_Box` | Sigma | alice · anaheim · marker |
 | [Project2501](#project2501) | `~/repos/Project2501` | Science | metron |
+| [Project2502](#project2502) | `~/repos/Project2502` | Science | caliper · razor · icebreaker |
 | [S2_Engine](#s2_engine) | `~/repos/S2_Engine` | Science | hohenheim · amestris · xerxes · hummingbird · tensor · alkahest · hawkeye · sheska |
 | [SEELE_01](#seele_01) | `~/repos/SEELE_01` | SEELE | keel-lorenz |
-| [SEELE_02](#seele_02) | `~/repos/SEELE_02` | SEELE | sledge · cinder · anvil · caliper · coke |
+| [SEELE_02](#seele_02) | `~/repos/SEELE_02` | SEELE | sledge · cinder · anvil · coke |
 | [SEELE_03](#seele_03) | `~/repos/SEELE_03` | SEELE | klinker · didymus · golgotha |
 | [Tiferet](#tiferet) | `~/repos/Tiferet` | Tragwerk | azael · baraqiel · kokabiel · penemue · sariel · shamsiel |
 | [Viper](#viper) | `~/repos/Viper` | ? | viper |
@@ -123,11 +128,12 @@ Poststelle is Haus mail only.
 
 **Ground.** Executive Command's own ground — the Ark, the system's
 highest implementation authority and central delegation hub,
-between doctrine and the grounds that build from it. `THE_ROUTE.md`
-is the law: every record the system files lands at the Ark, is homed
+between doctrine and the grounds that build from it. Current management
+is `bm-correspondence` and Ark's `regelkreis`; topology is `THE_CHARTER.md`
+with later rulings. `THE_ROUTE.md` is a prior. Records are homed
 where its fix is written — the reporter's own, the origin's pen, or
 the Ark — and is distributed to its owner; every fundamental change
-is mapped here and delegated by directive; every release is bound to
+is mapped here and assigned through a Gehirn; every release is bound to
 the pipelines that serve it on the S2 Pipeline Directory.
 `FRACTURE_REGISTER.md` the one index; `Altbau/` the priors. Haus
 mail in `Poststelle/`.
@@ -139,6 +145,12 @@ mail in `Poststelle/`.
 - **cartographer** — the terrain seat, the map hand: S2 and every
   ground's code, where it must flex and what the flex costs; the S2
   Pipeline Directory, the binding audited both ways.
+
+- **aramaki** — native Codex main agent, holding scenario and terrain together:
+  cross-ground integration, dependencies, readiness and the Ark's control
+  loop; identity in `.codex/config.toml`, navigation in `AGENTS.md`. Native helper
+  **borma** (`.codex/agents/borma.toml`) carries deep technical investigation
+  and second reads; Aramaki retains the office's decisions and integration.
 
 ## Armament_Grid
 
@@ -177,18 +189,20 @@ the card and binding receipt into Unit-03's inbox. Fresh implementation under
 `Ark/Handoff/GHOSTLINE_01.md`; the Ark coordinates the seam check. Local
 navigation and queue: `AGENTS.md`, `CONTINUITY.md`.
 
-- **arakiel** — native Codex main agent; fidelity from source meaning through
-  rendered expression, typed binding and the receiving information set.
-  Identity in `.codex/config.toml`; moved from Tiferet with these native roles:
-- **tamiel** — contract and meaning research; evidence, wording proposals and
-  acceptance cases.
-- **ezeqeel** — composition and delivery engineering; allocated implementation
-  and proof through its consuming path.
-- **turiel** — independent verification; source/body/envelope reconciliation,
-  isolation, reproduced failures and explicit coverage.
+- **0xWIRE** — native Codex main agent; bounded ingestion, minimal copying
+  and backpressure, carrying authorized renderer work through its consumer.
+  Identity in `.codex/config.toml`; GPT-6 Astra at xhigh.
+- **splitter** — native Codex helper; pipeline passage fidelity, duplication
+  filtering, bounded investigation and allocated implementation. Role in
+  `.codex/agents/splitter.toml`; GPT-6.1 Sol at max.
+- **bluebox** — independent Claude resident; the evidence channel, what is
+  read and retained, payload and control.
+- **vblank** — independent Claude resident; the delivery edge, cycle, frame
+  and early refusal. Claude identities live in `.claude/agents/`.
 
-Tiferet retains its Claude Watchers and Unit-02 `tikkun`. Klinker at SEELE_03
-owns sponsor admission and exact Eva expression; Metron owns the deriver.
+Klinker at SEELE_03 owns sponsor admission and exact Eva expression; Metron
+owns the deriver. Ghostline's seats share the package without specialty walls.
+Fresh Codex setup: `Ghostline_01/work/2026-10-16_0xwire/record.md`.
 
 ## GTypeEquipment
 
@@ -351,6 +365,25 @@ navigation; `CONTINUITY.md` holds the local queue.
   SEELE_03 through `codex_peers`. Klinker owns scientific meaning and exact
   Eva expression; the Ark coordinates integration and seam-checks.
 
+## Project2502
+
+`~/repos/Project2502` · measurement engineering for SEELE_02's program.
+
+**Ground.** Caliper's independent engineering home. Manual extraction of
+Anvil's established BR1 and collector derivations starts from the accepted
+source map in `work/extraction/`; no pipeline moved at stand-up. Research,
+scientific meaning and exact Eva expression stay with Anvil. `AGENTS.md`
+supplies navigation and `CONTINUITY.md` the current pickup.
+
+- **caliper** — resident Codex main agent; source admission conformance,
+  calculation, package/provider construction, replay and artifact fidelity.
+  Identity in `.codex/config.toml`; works directly with Anvil at SEELE_02
+  through `codex_peers`. The former SEELE_02 child role is archived.
+  Native children **razor** (`.codex/agents/razor.toml`) and **icebreaker**
+  (`.codex/agents/icebreaker.toml`), both GPT-6.1 Sol/max, carry bounded
+  implementation and independent conformance/tests. Caliper retains
+  integration and closure; Anvil retains scientific meaning and expression.
+
 ## S2_Engine
 
 `~/repos/S2_Engine` · Science
@@ -414,10 +447,6 @@ system only by release to SEELE_01.
   any capture run with the source as the only authority.
 - **anvil** — the Codex resident: the same pen (Codex,
   `gpt-6-astra`; identity inline in `.codex/config.toml`).
-- **caliper** — the measurement engineer (Codex native role,
-  dispatched by anvil): bounded source admission, computation,
-  replay, tests, code-to-Eva render fidelity; builds its allocation
-  on S2's cars; no further delegation.
 - **coke** — the capture instrument (Codex native role, dispatched
   by anvil): verbatim source capture — site discovery, page-faithful
   capture with retained bytes and locators, the distinct
