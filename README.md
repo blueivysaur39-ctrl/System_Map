@@ -48,7 +48,7 @@ is enough).
 | cartographer | Ark | | phantom | Nerv_Branch01 |
 | casper-3 | Magi | | reaper | HALO |
 | cinder | SEELE_02 | | ritsuko | Nerv_HQ |
-| coke | SEELE_02 | | sampson | Nerv_Branch01 |
+| coke | Nerv_Branch02 | | sampson | Nerv_Branch01 |
 | didymus | SEELE_03 | | saratoga | AAA_Wunder |
 | gendo | Ark | | sariel | Tiferet |
 | golgotha | SEELE_03 | | sears | AAA_Wunder |
@@ -66,6 +66,8 @@ is enough).
 | 0xWIRE | Ghostline_01 | | splitter | Ghostline_01 |
 | bluebox | Ghostline_01 | | vblank | Ghostline_01 |
 | razor | Project2502 | | icebreaker | Project2502 |
+| hellcat | Nerv_Branch02 | | widow | Nerv_Branch02 |
+| manta | Nerv_Branch02 | | ingot | SEELE_02 |
 
 ## By planet (scan)
 
@@ -81,6 +83,7 @@ is enough).
 | [Magi](#magi) | `~/repos/Magi_1` | S.C. + Technical | melchior-1 · balthasar-2 · casper-3 |
 | [Nerv_HQ](#nerv_hq) | `~/repos/Nerv_HQ` | Technical + Tactical | ritsuko · alaya · kanuka |
 | [Nerv_Branch01](#nerv_branch01) | `~/repos/Nerv_Branch01` | Technical | lexington · sampson · knox · hopper · phantom · tomcat |
+| [Nerv_Branch02](#nerv_branch02) | `~/repos/Nerv_Branch02` | Technical | hellcat · widow · coke |
 | [Nerv_Branch03](#nerv_branch03) | `~/repos/Nerv_Branch03` | Technical | kyoko · langley · vashti |
 | [PatternRed](#patternred) | `~/repos/PatternRed` | Tactical | — |
 | [Pribnow_Box](#pribnow_box) | `~/repos/Pribnow_Box` | Sigma | alice · anaheim · marker |
@@ -88,7 +91,7 @@ is enough).
 | [Project2502](#project2502) | `~/repos/Project2502` | Science | caliper · razor · icebreaker |
 | [S2_Engine](#s2_engine) | `~/repos/S2_Engine` | Science | hohenheim · amestris · xerxes · hummingbird · tensor · alkahest · hawkeye · sheska |
 | [SEELE_01](#seele_01) | `~/repos/SEELE_01` | SEELE | keel-lorenz |
-| [SEELE_02](#seele_02) | `~/repos/SEELE_02` | SEELE | sledge · cinder · anvil · coke |
+| [SEELE_02](#seele_02) | `~/repos/SEELE_02` | SEELE | sledge · cinder · anvil · ingot |
 | [SEELE_03](#seele_03) | `~/repos/SEELE_03` | SEELE | klinker · didymus · golgotha |
 | [Tiferet](#tiferet) | `~/repos/Tiferet` | Tragwerk | azael · baraqiel · kokabiel · penemue · sariel · shamsiel |
 | [Viper](#viper) | `~/repos/Viper` | ? | viper |
@@ -305,6 +308,27 @@ Third Branch by his hand. Neither sibling is a remote.
   in `AGENTS.md`; reached from the Claude seats' Schleusen as a Bahn
   through the plugin; standing check on wire weight.
 
+## Nerv_Branch02
+
+`~/repos/Nerv_Branch02` · Technical
+
+**Ground.** Raptor.01's sovereign host: BR1's installed calculation,
+durable slot and delivery records, the wake to Vampire.01 at Branch01,
+and the separately accepted Sim101 execution lane. Current first-flight
+scope and pins live in `CONTINUITY.md` and Gehirn-005. The flightdeck is
+the shared surface between the Claude seats and the Codex seat.
+
+- **hellcat** — the command seat: the host process and delivery integration.
+- **widow** — the second command seat: Raptor's card and order.
+- **coke** — the independent verifier, native Codex main seat on
+  `gpt-6-astra` at `xhigh`; challenges installed mechanics, provenance,
+  failure recovery and account isolation. Identity `.codex/config.toml`,
+  navigation `AGENTS.md`; opened by Michael in the Codex TUI.
+- **manta** — Coke's native technical investigator and second eyes,
+  `gpt-6.1-sol` at `max`, `.codex/agents/manta.toml`; bounded investigations,
+  reproductions, independent reads and allocated local work. Coke retains
+  integration and the done-call.
+
 ## Nerv_Branch03
 
 `~/repos/Nerv_Branch03` · Technical · queues `E-NNN` · `SORTIE-NNN`
@@ -447,10 +471,12 @@ system only by release to SEELE_01.
   any capture run with the source as the only authority.
 - **anvil** — the Codex resident: the same pen (Codex,
   `gpt-6-astra`; identity inline in `.codex/config.toml`).
-- **coke** — the capture instrument (Codex native role, dispatched
+- **ingot** — the capture instrument (Codex native role, dispatched
   by anvil): verbatim source capture — site discovery, page-faithful
   capture with retained bytes and locators, the distinct
-  verification pass; never authors doctrine.
+  verification pass; never authors doctrine. Renamed from coke; the capture
+  role continues at `.codex/agents/ingot.toml`. Coke is Branch02's main
+  verifier.
 
 ## SEELE_03
 
