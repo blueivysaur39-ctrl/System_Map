@@ -85,6 +85,7 @@ is enough).
 | [Nerv_Branch01](#nerv_branch01) | `~/repos/Nerv_Branch01` | Technical | lexington · sampson · knox · hopper · phantom · tomcat |
 | [Nerv_Branch02](#nerv_branch02) | `~/repos/Nerv_Branch02` | Technical | hellcat · widow · coke |
 | [Nerv_Branch03](#nerv_branch03) | `~/repos/Nerv_Branch03` | Technical | kyoko · langley · vashti |
+| [Nerv_04](#nerv_04) | `~/repos/Nerv_04` | Technical | — (Michael with ritsuko, to constitute) |
 | [PatternRed](#patternred) | `~/repos/PatternRed` | Tactical | — |
 | [Pribnow_Box](#pribnow_box) | `~/repos/Pribnow_Box` | Sigma | alice · anaheim · marker |
 | [Project2501](#project2501) | `~/repos/Project2501` | Science | metron |
@@ -275,7 +276,10 @@ to WSL2 2026-09-10.
 `~/repos/Nerv_Branch01` · Technical · queues `E-NNN` · `SORTIE-NNN`
 (minted from `E-500` / `SORTIE-500`)
 
-**Ground.** The First Branch — a sovereign copy of the Eva program
+**Ground.** **Since 2026-10-22, K5's branch, by Michael's sever** (Ark
+Gehirn-014): it owns Project2501, Ghostline_01 and its own Magi fork,
+`magi04`, whole. Nerv_04 was severed from it at `c2c8bf2`. The First
+Branch — a sovereign copy of the Eva program
 severed from Nerv_Branch03 2026-09-16, the experimental line: the
 adapter proving ground (OpenAI first; Unit-03 the first specimen),
 the teams architecture (Units as a wing), the cost line. Units here
@@ -345,6 +349,27 @@ the other.
   design loop, the research hand, the build hand.
 - **vashti** — the mechanic: the build, the run end to end, custody of
   live fire, the record.
+
+## Nerv_04
+
+`~/repos/Nerv_04` · Technical · the first gen-2 branch (`Nerv-0N`, repos
+`Nerv_0N`)
+
+**Ground.** Severed clean from Nerv_Branch01 on 2026-10-23 at 00:01:05Z, on
+Michael's sever (Ark Gehirn-014; `THE_CHARTER.md` §1).
+- **The root:** one orphan commit, `7a8ecc7`, whose tree `fbccd417` is
+  byte-equal to Nerv_Branch01 `c2c8bf2` (knox's cut, 0.3.0).
+- **No shared history:** neither repo is the other's remote. Michael's
+  GitHub remote follows.
+- **The law here is "Units fly":** a Unit receives an Obol and flies,
+  carrying none of its producers' machinery. K6 lands here, composed by
+  Ghostline_02.
+- **First cut:** its seats purge Branch-01's K5 machinery. The tree still
+  names Branch-01, and its distribution is `project_e01`.
+
+- **Seats:** not yet constituted (Michael, with ritsuko).
+
+---
 
 ## PatternRed
 
