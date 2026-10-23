@@ -359,8 +359,12 @@ the other.
 Michael's sever (Ark Gehirn-014; `THE_CHARTER.md` §1).
 - **The root:** one orphan commit, `7a8ecc7`, whose tree `fbccd417` is
   byte-equal to Nerv_Branch01 `c2c8bf2` (knox's cut, 0.3.0).
-- **No shared history:** neither repo is the other's remote. Michael's
-  GitHub remote follows.
+- **No shared history:** neither repo holds the other's commits, and neither
+  is the other's remote.
+- **Its own remote:** Michael's private GitHub repo
+  `blueivysaur39-ctrl/Nerv_04`, with `main` pushed at the root `7a8ecc7`.
+  Branch-01's GitHub marks the sever with the tag
+  `severed/nerv-04-2026-10-22` → `c2c8bf2`.
 - **The law here is "Units fly":** a Unit receives an Obol and flies,
   carrying none of its producers' machinery. K6 lands here, composed by
   Ghostline_02.
