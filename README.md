@@ -68,6 +68,11 @@ is enough).
 | razor | Project2502 | | icebreaker | Project2502 |
 | hellcat | Nerv_Branch02 | | widow | Nerv_Branch02 |
 | manta | Nerv_Branch02 | | ingot | SEELE_02 |
+| melchior-4 | Nerv_Branch01 | | balthasar-5 | Nerv_Branch01 |
+| casper-6 | Nerv_Branch01 | | | |
+| wintermute | Project2503 | | neuromancer | Project2503 |
+| turing | Project2503 | | maelcum | Project2503 |
+| mnemonic | Project2503 | | molly | Project2503 |
 
 ## By planet (scan)
 
@@ -82,7 +87,7 @@ is enough).
 | [HALO](#halo) | `~/repos/HALO` | CENTCOM | orbital · reaper |
 | [Magi](#magi) | `~/repos/Magi_1` | S.C. + Technical | melchior-1 · balthasar-2 · casper-3 |
 | [Nerv_HQ](#nerv_hq) | `~/repos/Nerv_HQ` | Technical + Tactical | ritsuko · alaya · kanuka |
-| [Nerv_Branch01](#nerv_branch01) | `~/repos/Nerv_Branch01` | Technical | lexington · sampson · knox · hopper · phantom · tomcat |
+| [Nerv_Branch01](#nerv_branch01) | `~/repos/Nerv_Branch01` | Technical | lexington · sampson · knox · hopper · phantom · tomcat · melchior-4 · balthasar-5 · casper-6 |
 | [Nerv_Branch02](#nerv_branch02) | `~/repos/Nerv_Branch02` | Technical | hellcat · widow · coke |
 | [Nerv_Branch03](#nerv_branch03) | `~/repos/Nerv_Branch03` | Technical | kyoko · langley · vashti |
 | [Nerv_04](#nerv_04) | `~/repos/Nerv_04` | Technical | — (Michael with ritsuko, to constitute) |
@@ -90,6 +95,7 @@ is enough).
 | [Pribnow_Box](#pribnow_box) | `~/repos/Pribnow_Box` | Sigma | alice · anaheim · marker |
 | [Project2501](#project2501) | `~/repos/Project2501` | Science | metron |
 | [Project2502](#project2502) | `~/repos/Project2502` | Science | caliper · razor · icebreaker |
+| [Project2503](#project2503) | `~/repos/Project2503` | Science | wintermute · turing · mnemonic · neuromancer · maelcum · molly |
 | [S2_Engine](#s2_engine) | `~/repos/S2_Engine` | Science | hohenheim · amestris · xerxes · hummingbird · tensor · alkahest · hawkeye · sheska |
 | [SEELE_01](#seele_01) | `~/repos/SEELE_01` | SEELE | keel-lorenz |
 | [SEELE_02](#seele_02) | `~/repos/SEELE_02` | SEELE | sledge · cinder · anvil · ingot |
@@ -288,8 +294,8 @@ the Operator's ruling per run; what proves out graduates to the
 Third Branch by his hand. Neither sibling is a remote.
 
 - **lexington** — the command seat: holds the branch whole, answers
-  for what graduates, runs sampson, knox, hopper and phantom as
-  Bahnen from the Schleuse.
+  for what graduates, runs sampson, knox, hopper, phantom and the
+  MAGI trinity as Bahnen from the Schleuse.
 - **sampson** — the cognition seat, the prose master: what the Unit
   is told and how it renders, Unit-03's soul with the Operator, the
   mouth she answers in, the reasoning passed back across the
@@ -309,8 +315,14 @@ Third Branch by his hand. Neither sibling is a remote.
 - **tomcat** — the Codex seat, the perimeter: the OpenAI wire with
   knox, the adversarial read at the boundary, the whole Unit when
   opened on it; the resident blob in `.codex/config.toml`, the routes
-  in `AGENTS.md`; reached from the Claude seats' Schleusen as a Bahn
-  through the plugin; standing check on wire weight.
+  in `AGENTS.md`; works the flightdeck only, at his own console, never
+  a Bahn; standing check on wire weight.
+- **melchior-4 · balthasar-5 · casper-6** — the MAGI trinity, the
+  engine (Sonnet): magi_4's console, the magi04 fork, the clock
+  issuer, K5's clock reader seam — the measurement, the halt, the
+  push; the siblings and the leaves are the whole Schleuse, never a
+  branch seat; stood 2026-10-25, written on Magi_1 by each MAGI for
+  its counterpart.
 
 ## Nerv_Branch02
 
@@ -436,6 +448,38 @@ supplies navigation and `CONTINUITY.md` the current pickup.
   (`.codex/agents/icebreaker.toml`), both GPT-6.1 Sol/max, carry bounded
   implementation and independent conformance/tests. Caliper retains
   integration and closure; Anvil retains scientific meaning and expression.
+
+## Project2503
+
+`~/repos/Project2503` · the options-participation deriver, `signalnet03`
+(P04: SPX, SPXW and QQQ participation, coverage and lifecycle — 30 leaf
+families at map edition 3).
+
+**Ground.** Stood up 2026-10-23 as an independent Project250N provider
+under `Ark/THE_CHARTER.md` §1 (the sever) and `Ark/Handoff/PROJECT2503.md`;
+the head is Ark Gehirn-011. Reads HALO's retained chain captures and
+expiration vintages by path at a digest; seals `K6.C_options_context` for
+Ghostline_02's composer, the configured consumer first Nerv_04. Private
+GitHub remote `blueivysaur39-ctrl/Project2503`. Two harnesses, one team:
+the room is `straylight/` (`JACK.md` the jack-in board, `ice-NNN/` the
+threads, `rulings.md`, `cleared/`), filed by `first-bridge`, checked by
+`second-bridge`; the two Faktoren stamp each other's briefs, the leaves and
+native children never. `CLAUDE.md` the ground law; `AGENTS.md` the Codex
+route; `CONTINUITY.md` the stand-up's cold start until the first close.
+
+- **wintermute** — the Claude Faktor (Opus, he): chain truth at the
+  participation grain, the provider's perimeter, construction whole, the
+  done-call and the return to the Ark; runs the two leaves as Bahnen.
+- **turing** — leaf, the verifier (Opus): re-derives the product from the
+  original bytes without the producer's helpers; read-only on producer
+  math while it reviews; never stamps.
+- **mnemonic** — leaf, the custody hand (Sonnet): the manifest, archive,
+  vintage and receipt reads, the clocks kept apart, the projection to the
+  section carried whole; never stamps.
+- **neuromancer** — the Codex Faktor (GPT-6 Astra/xhigh); identity in
+  `.codex/config.toml`; wintermute's opposite stamp. Native children
+  **maelcum** (custody and consumer joins) and **molly** (independent
+  verification), both GPT-6.1 Sol/max, in `.codex/agents/`.
 
 ## S2_Engine
 
