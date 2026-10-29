@@ -63,8 +63,8 @@ is enough).
 | klinker | SEELE_03 | | wildcat | AAA_Wunder |
 | knox | Nerv_Branch01 | | xerxes | S2_Engine |
 | aramaki | Ark | | borma | Ark |
-| 0xWIRE | Ghostline_01 | | splitter | Ghostline_01 |
-| bluebox | Ghostline_01 | | vblank | Ghostline_01 |
+| 0xWIRE | Ghostline_02 | | splitter | Ghostline_02 |
+| bluebox | Ghostline_02 | | vblank | Ghostline_02 |
 | razor | Project2502 | | icebreaker | Project2502 |
 | hellcat | Nerv_Branch02 | | widow | Nerv_Branch02 |
 | manta | Nerv_Branch02 | | ingot | SEELE_02 |
@@ -73,6 +73,7 @@ is enough).
 | wintermute | Project2503 | | neuromancer | Project2503 |
 | turing | Project2503 | | maelcum | Project2503 |
 | mnemonic | Project2503 | | molly | Project2503 |
+| 3jane | Nerv_04 | | fire-starter | Nerv_04 |
 
 ## By planet (scan)
 
@@ -82,7 +83,8 @@ is enough).
 | [Ark](#ark) | `~/repos/Ark` | EXEC | gendo · cartographer · aramaki |
 | [Armament_Grid](#armament_grid) | `~/repos/Armament_Grid` | CENTCOM + Tactical | hazop · misato · venator |
 | [Gewebe](#gewebe) | `~/repos/Gewebe` | S.C. | — (the MAGI, from Magi) |
-| [Ghostline_01](#ghostline_01) | `~/repos/Ghostline_01` | ? | 0xWIRE · splitter · bluebox · vblank |
+| [Ghostline_01](#ghostline_01) | `~/repos/Ghostline_01` | ? | — (frozen; Branch-01's, read-only) |
+| [Ghostline_02](#ghostline_02) | `~/repos/Ghostline_02` | ? | 0xWIRE · splitter · bluebox · vblank |
 | [GTypeEquipment](#gtypeequipment) | `C:\GTypeEquipment` | Tactical | — |
 | [HALO](#halo) | `~/repos/HALO` | CENTCOM | orbital · reaper |
 | [Magi](#magi) | `~/repos/Magi_1` | S.C. + Technical | melchior-1 · balthasar-2 · casper-3 |
@@ -90,7 +92,7 @@ is enough).
 | [Nerv_Branch01](#nerv_branch01) | `~/repos/Nerv_Branch01` | Technical | lexington · sampson · knox · hopper · phantom · tomcat · melchior-4 · balthasar-5 · casper-6 |
 | [Nerv_Branch02](#nerv_branch02) | `~/repos/Nerv_Branch02` | Technical | hellcat · widow · coke |
 | [Nerv_Branch03](#nerv_branch03) | `~/repos/Nerv_Branch03` | Technical | kyoko · langley · vashti |
-| [Nerv_04](#nerv_04) | `~/repos/Nerv_04` | Technical | — (Michael with ritsuko, to constitute) |
+| [Nerv_04](#nerv_04) | `~/repos/Nerv_04` | Technical | 3jane (the Faktor) · fire-starter · the observer (leaves; the observer's coin pending) · Puppetmaster (Codex, set pending) |
 | [PatternRed](#patternred) | `~/repos/PatternRed` | Tactical | — |
 | [Pribnow_Box](#pribnow_box) | `~/repos/Pribnow_Box` | Sigma | alice · anaheim · marker |
 | [Project2501](#project2501) | `~/repos/Project2501` | Science | metron |
@@ -191,16 +193,38 @@ clock is asked there.
 
 ## Ghostline_01
 
-`~/repos/Ghostline_01` · Branch-01's renderer, `ghostline`.
+`~/repos/Ghostline_01` · Branch-01's renderer, `ghostline` — K5's card
+path; frozen with the repo.
 
 **Ground.** Reads Project2501's sealed objects by path at a digest, sponsor
 profiles and Nerv's context; admits and renders `obol-task-1`, then writes
-the card and binding receipt into Unit-03's inbox. Fresh implementation under
-`Ark/Handoff/GHOSTLINE_01.md`; the Ark coordinates the seam check. Local
-navigation and queue: `AGENTS.md`, `CONTINUITY.md`.
+the card and binding receipt into Unit-03's inbox. Implementation under
+`Ark/Handoff/GHOSTLINE_01.md`. Branch-01's six hold the pen (lexington);
+every other ground reads it by absolute path, never writes, never imports.
+Local navigation and queue: `AGENTS.md`, `CONTINUITY.md`.
+
+- **Seats:** none resident. 0xWIRE, splitter, bluebox and vblank moved to
+  Ghostline_02 on the Operator's sever (`Ark/Handoff/GHOSTLINE_02.md`); the
+  K5 channel and edge records stay here, with their former identity files.
+
+## Ghostline_02
+
+`~/repos/Ghostline_02` · the K6 Obol composer, `ghostline02` — one package,
+one fang.
+
+**Ground.** Composes the standard Obol for any configured consumer — Nerv-04
+first, when it stands — from the producers' sealed products, each read by
+absolute path at its digest, never imported: Project2505's `signalnet05` for
+price, Project2503 for options, Project2504 for IV, the dated context under
+Gehirn-006; selection at the decision cutoff, each product's own frontier
+kept. Writes the Obol and its receipt — limbo until delivery is ruled.
+Severed from Ghostline_01's §K6 under `Ark/Handoff/GHOSTLINE_02.md`
+(cartographer, Gehirn-014); integration is aramaki's. Local navigation and
+queue: `AGENTS.md`, `CONTINUITY.md`; the thread room is `patchbay/`, the
+evidence `work/`.
 
 - **0xWIRE** — native Codex main agent; bounded ingestion, minimal copying
-  and backpressure, carrying authorized renderer work through its consumer.
+  and backpressure, carrying authorized composer work through its consumer.
   Identity in `.codex/config.toml`; GPT-6 Astra at xhigh.
 - **splitter** — native Codex helper; pipeline passage fidelity, duplication
   filtering, bounded investigation and allocated implementation. Role in
@@ -210,9 +234,9 @@ navigation and queue: `AGENTS.md`, `CONTINUITY.md`.
 - **vblank** — independent Claude resident; the delivery edge, cycle, frame
   and early refusal. Claude identities live in `.claude/agents/`.
 
-Klinker at SEELE_03 owns sponsor admission and exact Eva expression; Metron
-owns the deriver. Ghostline's seats share the package without specialty walls.
-Fresh Codex setup: `Ghostline_01/work/2026-10-16_0xwire/record.md`.
+Klinker at SEELE_03 owns sponsor admission and exact Eva expression; the
+producers own their products. Ghostline's seats share the package without
+specialty walls.
 
 ## GTypeEquipment
 
@@ -380,10 +404,21 @@ Michael's sever (Ark Gehirn-014; `THE_CHARTER.md` §1).
 - **The law here is "Units fly":** a Unit receives an Obol and flies,
   carrying none of its producers' machinery. K6 lands here, composed by
   Ghostline_02.
-- **First cut:** its seats purge Branch-01's K5 machinery. The tree still
-  names Branch-01, and its distribution is `project_e01`.
+- **First cut:** its seats purge Branch-01's K5 machinery. The distribution
+  is `project_e04` (renamed 2026-10-27); Branch-01's law, flightdeck and
+  Codex config rest in `Altbau/` as priors.
+- **An oracle ground** (ruled 2026-10-26): Unit-04 (`unit_04`), the K6
+  Obol's consumer and the squadron brief's recipient; no order leaves it. The
+  trade ground is a later Nerv-0N, forked from this one's purged root.
 
-- **Seats:** not yet constituted (Michael, with ritsuko).
+- **Seats** (constituted 2026-10-26, Michael with ritsuko): **3jane** — the
+  Claude Faktor, the oracle ground command (`claude --agent 3jane`);
+  **fire-starter** — the hand, the machinery leaf; **the observer** — the
+  independent read, a leaf drafted whole, a seat once the Operator coins its
+  name; **Puppetmaster** — the Codex Faktor with **logicoma-1** and
+  **logicoma-2**, its set pending its author. The room: `cybersyn/` —
+  `JACK.md`, `servo-NNN/`, `step-sN-M`, `rulings.md`, `cleared/` —
+  straylight's form; the law is its own `CLAUDE.md`.
 
 ---
 
