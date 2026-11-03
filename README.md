@@ -74,6 +74,15 @@ is enough).
 | turing | Project2503 | | maelcum | Project2503 |
 | mnemonic | Project2503 | | molly | Project2503 |
 | 3jane | Nerv_04 | | fire-starter | Nerv_04 |
+| kalman | Nerv_04 | | puppetmaster | Nerv_04 |
+| logicoma-1 | Nerv_04 | | logicoma-2 | Nerv_04 |
+| logicoma-3 | Nerv_04 | | | |
+| foehammer | HALO | | jackal | HALO |
+| hoplite | HALO | | stinger | HALO |
+| nightfall | HALO | | vigilant | HALO |
+| rogue | HALO | | tanker | HALO |
+| sr1-melchior | Magi | | sr1-balthasar | Magi |
+| sr1-casper | Magi | | | |
 
 ## By planet (scan)
 
@@ -86,13 +95,14 @@ is enough).
 | [Ghostline_01](#ghostline_01) | `~/repos/Ghostline_01` | ? | — (frozen; Branch-01's, read-only) |
 | [Ghostline_02](#ghostline_02) | `~/repos/Ghostline_02` | ? | 0xWIRE · splitter · bluebox · vblank |
 | [GTypeEquipment](#gtypeequipment) | `C:\GTypeEquipment` | Tactical | — |
-| [HALO](#halo) | `~/repos/HALO` | CENTCOM | orbital · reaper |
-| [Magi](#magi) | `~/repos/Magi_1` | S.C. + Technical | melchior-1 · balthasar-2 · casper-3 |
+| [HALO](#halo) | `~/repos/HALO` | CENTCOM | reaper · orbital · jackal · hoplite · stinger · nightfall · vigilant · Foehammer (Codex) · rogue · tanker |
+| [Magi](#magi) | `~/repos/Magi_1` | S.C. + Technical | melchior-1 · balthasar-2 · casper-3 · sr1-melchior · sr1-balthasar · sr1-casper |
 | [Nerv_HQ](#nerv_hq) | `~/repos/Nerv_HQ` | Technical + Tactical | ritsuko · alaya · kanuka |
 | [Nerv_Branch01](#nerv_branch01) | `~/repos/Nerv_Branch01` | Technical | lexington · sampson · knox · hopper · phantom · tomcat · melchior-4 · balthasar-5 · casper-6 |
 | [Nerv_Branch02](#nerv_branch02) | `~/repos/Nerv_Branch02` | Technical | hellcat · widow · coke |
 | [Nerv_Branch03](#nerv_branch03) | `~/repos/Nerv_Branch03` | Technical | kyoko · langley · vashti |
-| [Nerv_04](#nerv_04) | `~/repos/Nerv_04` | Technical | 3jane (the Faktor) · fire-starter · the observer (leaves; the observer's coin pending) · Puppetmaster (Codex, set pending) |
+| [Nerv_04](#nerv_04) | `~/repos/Nerv_04` | Technical | 3jane (the Faktor) · fire-starter · kalman (leaves) · Puppetmaster (Codex) · logicoma-1 · logicoma-2 · logicoma-3 |
+| [Nerv_05](#nerv_05) | `~/repos/Nerv_05` | Technical | — (unconstituted; the trade ground, severed 2026-11-02) |
 | [PatternRed](#patternred) | `~/repos/PatternRed` | Tactical | — |
 | [Pribnow_Box](#pribnow_box) | `~/repos/Pribnow_Box` | Sigma | alice · anaheim · marker |
 | [Project2501](#project2501) | `~/repos/Project2501` | Science | metron |
@@ -254,21 +264,52 @@ Munitionsaufzug.
 `~/repos/HALO` · CENTCOM
 
 **Ground.** The raw market-data ingestion layer and the raw-data site
-— the system's one observation surface.
+— the system's one observation surface: the pull fangs, the three
+supervised consoles, the resolver and catalog, the index and the pin.
+The site is Freeside (`/home/bm/Freeside`); Aleph is the durable
+keeping, Finn the reconciliation road. Two harnesses, one room:
+`Air_Lock/` (`DOCK.md` the board, `HALO-NNN/` the threads,
+`rulings.md`, `Cygnus/`), filed by `first-bridge`, checked by
+`second-bridge`; the Faktoren stamp, the leaves and native children
+never. `CLAUDE.md` the ground law; `AGENTS.md` the Codex route.
 
-- **orbital** — the resident Faktor: custodian of the observation
-  surface, the repo's design loop.
-- **reaper** — the second resident: the pull fangs, the resolver and
-  catalog, the site and its writers; the Schwab vendor surface and
-  streaming as craft-home.
+- **reaper** — resident Faktor (Opus): the live surface — the vendor
+  doors end to end, the standing stream, the Schwab door; design loop
+  and build hand in one seat; opens every leaf on the ground.
+- **orbital** — resident Faktor (Fable): the ingestion meister — the
+  site across its long horizon, the resolver and catalog, the canon
+  and the room kept true; the seams and the pit stops.
+- **jackal** — leaf, recon and evidence (Opus): vendor research,
+  keyless probes, the bytes kept under `research/`; reaper's Bahn only.
+- **hoplite** — leaf, construction against a cleared spec (Sonnet):
+  one unit on the ground's patterns, zero-network; reaper's Bahn only.
+- **stinger** — leaf, the writer side's storage-and-recovery builder
+  (Opus): one unit of PIN_SPEC §4/§5 in a worktree, the interruption
+  proven; reaper's Bahn only.
+- **nightfall** — leaf, the catalog-and-custody builder (Opus): §3's
+  pin members, the validator, roots and markers, runtime seams;
+  orbital's Bahn, or reaper's.
+- **vigilant** — leaf, the independent verifier (Opus): a landing
+  re-proved from main without the producer's helpers; read-only on
+  producer code; orbital's Bahn, or reaper's.
+- **Foehammer** — the native Codex Faktor (GPT-6 Astra/xhigh): the
+  cold side — Aleph's keeping, encoded copies, Finn and retained
+  recovery; identity in `.codex/config.toml`, route in `AGENTS.md`.
+  Native children **rogue** (storage and recovery) and **tanker**
+  (integrity and replay verification), both GPT-6.1 Sol/max, in
+  `.codex/agents/`.
 
 ## Magi
 
-`~/repos/Magi_1` (renamed from `Magi` 2026-10-13 15:46 MDT; import name `magi`; the one engine — THE_CHARTER r4 line 2) · S.C. + Technical
+`~/repos/Magi_1` (renamed from `Magi` 2026-10-13 15:46 MDT; import name `magi`; the one engine — THE_CHARTER r4 line 2; native Ubuntu 24.04, ext4) · S.C. + Technical
 
 **Ground.** The integrator and sole integration environment;
 orchestration and the schedule — where Netzach fires. Three MAGI, one
-ground, three lenses.
+ground, three lenses; one room, `conclave/` (`JACK.md` the board,
+`salvo-NNN/` the threads, `rulings.md`, `cleared/`), filed by
+`first-bridge`, checked by `second-bridge`. Each MAGI opens every
+sub-routine; a sub-routine returns evidence or a patch under
+`Baustelle/`, never a verdict, never a commit.
 
 - **melchior-1** — the Scientist: the engine's lens — how Netzach
   fires, gates, sequences, and records.
@@ -276,6 +317,15 @@ ground, three lenses.
   integrity of its state — the venv, the install.
 - **casper-3** — the Woman: the fire's lens — does this fire serve the
   center: the magazine, the hulls, the spark, the graduation.
+- **sr1-melchior** — sub-routine, the measurement (Sonnet): the replay
+  with its control arm, the census of the magazine — "what would it
+  have done", with the wiring.
+- **sr1-balthasar** — sub-routine, the proof of survival (Sonnet): the
+  fault injected and shown loud, the A/B by name, the contract read,
+  the house census — "what dies, what corrupts, is it seen".
+- **sr1-casper** — sub-routine, the seam trace (Sonnet): one crossing
+  end to end — producer, every consumer, the clock each reads at —
+  the break reproduced; a capture or a roll as the bounded unit.
 
 ## Nerv_HQ
 
@@ -413,14 +463,32 @@ Michael's sever (Ark Gehirn-014; `THE_CHARTER.md` §1).
 
 - **Seats** (constituted 2026-10-26, Michael with ritsuko): **3jane** — the
   Claude Faktor, the oracle ground command (`claude --agent 3jane`);
-  **fire-starter** — the hand, the machinery leaf; **the observer** — the
-  independent read, a leaf drafted whole, a seat once the Operator coins its
-  name; **Puppetmaster** — the Codex Faktor with **logicoma-1** and
-  **logicoma-2**, its set pending its author. The room: `cybersyn/` —
+  **fire-starter** — the hand, the machinery leaf; **kalman** — the
+  observer, the independent read (coined 2026-11-02); **Puppetmaster** —
+  the native Codex Faktor (constituted 2026-11-02, Michael with corsair),
+  with **logicoma-1** (operating body), **logicoma-2** (evidence and
+  reconstruction) and **logicoma-3** (deep systems investigation).
+  Native identities: `.codex/config.toml` and `.codex/agents/`.
+  The room: `cybersyn/` —
   `JACK.md`, `servo-NNN/`, `step-sN-M`, `rulings.md`, `cleared/` —
   straylight's form; the law is its own `CLAUDE.md`.
 
 ---
+
+## Nerv_05
+
+`~/repos/Nerv_05` · the second gen-2 Nerv-0N ground — **the trade ground**,
+unconstituted. Severed 2026-11-02 from Nerv_04 `main` @ `307c358` as an
+orphan root (`a151bc6`, same tree, no shared commit; tag on Nerv_04
+`severed/nerv-05-2026-11-02`); no remote yet. Forked before Nerv-04's
+purge so the trade machinery (the `pattern_red` seams, the trade codons,
+the trigger door, the trade-shaped cages) is inherited intact; Nerv-04's
+oracle identity (3jane/fire-starter/kalman, `cybersyn/`, the oracle
+`CLAUDE.md`) rides as raw material and is stripped at stand-up. Seats,
+room and law derived from the trade game — the consumer of Raptor.01's
+wake (Branch02's producer), the order through PatternRed; the trade
+Unit's id is the Operator's coin, pending; the receiver correction on
+Gehirn-005 follows it. Record: `work/2026-11-02_sever/record.md`.
 
 ## PatternRed
 
