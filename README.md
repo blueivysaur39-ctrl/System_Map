@@ -63,8 +63,11 @@ is enough).
 | klinker | SEELE_03 | | wildcat | AAA_Wunder |
 | knox | Nerv_Branch01 | | xerxes | S2_Engine |
 | aramaki | Ark | | borma | Ark |
+| batou | Ark | | ishikawa | Ark |
 | 0xWIRE | Ghostline_02 | | splitter | Ghostline_02 |
 | bluebox | Ghostline_02 | | vblank | Ghostline_02 |
+| parallax | Ghostline_02 | | | |
+| folio | Ghostline_02 | | concord | Ghostline_02 |
 | razor | Project2502 | | icebreaker | Project2502 |
 | hellcat | Nerv_Branch02 | | widow | Nerv_Branch02 |
 | manta | Nerv_Branch02 | | ingot | SEELE_02 |
@@ -93,7 +96,7 @@ is enough).
 | [Armament_Grid](#armament_grid) | `~/repos/Armament_Grid` | CENTCOM + Tactical | hazop · misato · venator |
 | [Gewebe](#gewebe) | `~/repos/Gewebe` | S.C. | — (the MAGI, from Magi) |
 | [Ghostline_01](#ghostline_01) | `~/repos/Ghostline_01` | ? | — (frozen; Branch-01's, read-only) |
-| [Ghostline_02](#ghostline_02) | `~/repos/Ghostline_02` | ? | 0xWIRE · splitter · bluebox · vblank |
+| [Ghostline_02](#ghostline_02) | `~/repos/Ghostline_02` | ? | 0xWIRE · splitter · parallax · folio · concord · bluebox · vblank |
 | [GTypeEquipment](#gtypeequipment) | `C:\GTypeEquipment` | Tactical | — |
 | [HALO](#halo) | `~/repos/HALO` | CENTCOM | reaper · orbital · jackal · hoplite · stinger · nightfall · vigilant · Foehammer (Codex) · rogue · tanker |
 | [Magi](#magi) | `~/repos/Magi_1` | S.C. + Technical | melchior-1 · balthasar-2 · casper-3 · sr1-melchior · sr1-balthasar · sr1-casper |
@@ -170,9 +173,11 @@ mail in `Poststelle/`.
 
 - **aramaki** — native Codex main agent, holding scenario and terrain together:
   cross-ground integration, dependencies, readiness and the Ark's control
-  loop; identity in `.codex/config.toml`, navigation in `AGENTS.md`. Native helper
-  **borma** (`.codex/agents/borma.toml`) carries deep technical investigation
-  and second reads; Aramaki retains the office's decisions and integration.
+  loop; identity in `.codex/config.toml`, navigation in `AGENTS.md`. Native helpers
+  in `.codex/agents/`: **borma** for deep technical investigation and second reads;
+  **batou** for complete source-to-Unit performance and freshness; **ishikawa**
+  for structured derivation through Markdown to actual Unit input. Aramaki retains
+  the office's decisions and integration; owning grounds implement.
 
 ## Armament_Grid
 
@@ -239,6 +244,15 @@ evidence `work/`.
 - **splitter** — native Codex helper; pipeline passage fidelity, duplication
   filtering, bounded investigation and allocated implementation. Role in
   `.codex/agents/splitter.toml`; GPT-6.1 Sol at max.
+- **parallax** — native Codex independent composition verifier; reconstructs
+  component selection and Obol expression from original sealed products
+  and contracts. Role `.codex/agents/parallax.toml`; GPT-6.1 Sol at max.
+- **folio** — native Codex Unit presentation engineer; deterministic readable
+  expression and packet helpers under approved meaning and explicit allocation.
+  Role `.codex/agents/folio.toml`; GPT-6.1 Sol at max.
+- **concord** — native Codex independent information-preservation reviewer;
+  original-source distinctions, dimensions, precision and reading completeness.
+  Role `.codex/agents/concord.toml`; GPT-6.1 Sol at max.
 - **bluebox** — independent Claude resident; the evidence channel, what is
   read and retained, payload and control.
 - **vblank** — independent Claude resident; the delivery edge, cycle, frame
