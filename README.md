@@ -41,7 +41,7 @@ is enough).
 | amestris | S2_Engine | | lexington | Nerv_Branch01 |
 | anaheim | Pribnow_Box | | marker | Pribnow_Box |
 | anvil | SEELE_02 | | melchior-1 | Magi |
-| azael | Tiferet | | metron | Project2501 |
+| azael | Tiferet | | metron | Project2505 |
 | balthasar-2 | Magi | | misato | Armament_Grid |
 | baraqiel | Tiferet | | orbital | HALO |
 | caliper | Project2502 | | penemue | Tiferet |
@@ -76,14 +76,14 @@ is enough).
 | wintermute | Project2503 | | neuromancer | Project2503 |
 | turing | Project2503 | | maelcum | Project2503 |
 | mnemonic | Project2503 | | molly | Project2503 |
+| vernier | Project2505 | | ergodic | Project2505 |
+| parseval | Project2505 | | darkfiber | Project2505 |
+| ligature | Project2505 | | | |
 | 3jane | Nerv_04 | | fire-starter | Nerv_04 |
 | kalman | Nerv_04 | | puppetmaster | Nerv_04 |
 | logicoma-1 | Nerv_04 | | logicoma-2 | Nerv_04 |
 | logicoma-3 | Nerv_04 | | | |
-| foehammer | HALO | | jackal | HALO |
-| hoplite | HALO | | stinger | HALO |
-| nightfall | HALO | | vigilant | HALO |
-| rogue | HALO | | tanker | HALO |
+| foehammer | HALO | | | |
 | sr1-melchior | Magi | | sr1-balthasar | Magi |
 | sr1-casper | Magi | | | |
 
@@ -98,7 +98,7 @@ is enough).
 | [Ghostline_01](#ghostline_01) | `~/repos/Ghostline_01` | ? | — (frozen; Branch-01's, read-only) |
 | [Ghostline_02](#ghostline_02) | `~/repos/Ghostline_02` | ? | 0xWIRE · splitter · parallax · folio · concord · bluebox · vblank |
 | [GTypeEquipment](#gtypeequipment) | `C:\GTypeEquipment` | Tactical | — |
-| [HALO](#halo) | `~/repos/HALO` | CENTCOM | reaper · orbital · jackal · hoplite · stinger · nightfall · vigilant · Foehammer (Codex) · rogue · tanker |
+| [HALO](#halo) | `~/repos/HALO` | CENTCOM | reaper · orbital · Foehammer (Codex) |
 | [Magi](#magi) | `~/repos/Magi_1` | S.C. + Technical | melchior-1 · balthasar-2 · casper-3 · sr1-melchior · sr1-balthasar · sr1-casper |
 | [Nerv_HQ](#nerv_hq) | `~/repos/Nerv_HQ` | Technical + Tactical | ritsuko · alaya · kanuka |
 | [Nerv_Branch01](#nerv_branch01) | `~/repos/Nerv_Branch01` | Technical | lexington · sampson · knox · hopper · phantom · tomcat · melchior-4 · balthasar-5 · casper-6 |
@@ -107,10 +107,10 @@ is enough).
 | [Nerv_04](#nerv_04) | `~/repos/Nerv_04` | Technical | 3jane (the Faktor) · fire-starter · kalman (leaves) · Puppetmaster (Codex) · logicoma-1 · logicoma-2 · logicoma-3 |
 | [Nerv_05](#nerv_05) | `~/repos/Nerv_05` | Technical | — (unconstituted; the trade ground, severed 2026-11-02) |
 | [PatternRed](#patternred) | `~/repos/PatternRed` | Tactical | — |
-| [Pribnow_Box](#pribnow_box) | `~/repos/Pribnow_Box` | Sigma | alice · anaheim · marker |
-| [Project2501](#project2501) | `~/repos/Project2501` | Science | metron |
+| [Pribnow_Box](#pribnow_box) | `~/repos/Pribnow_Box` | Sigma | alice (the Faktor) · anaheim (Codex) |
 | [Project2502](#project2502) | `~/repos/Project2502` | Science | caliper · razor · icebreaker |
 | [Project2503](#project2503) | `~/repos/Project2503` | Science | wintermute · turing · mnemonic · neuromancer · maelcum · molly |
+| [Project2505](#project2505) | `~/repos/Project2505` | Science | metron · ergodic · darkfiber (Codex) · vernier · parseval · ligature |
 | [S2_Engine](#s2_engine) | `~/repos/S2_Engine` | Science | hohenheim · amestris · xerxes · hummingbird · tensor · alkahest · hawkeye · sheska |
 | [SEELE_01](#seele_01) | `~/repos/SEELE_01` | SEELE | keel-lorenz |
 | [SEELE_02](#seele_02) | `~/repos/SEELE_02` | SEELE | sledge · cinder · anvil · ingot |
@@ -278,40 +278,26 @@ Munitionsaufzug.
 `~/repos/HALO` · CENTCOM
 
 **Ground.** The raw market-data ingestion layer and the raw-data site
-— the system's one observation surface: the pull fangs, the three
+— the system's one observation surface: the pull fangs, the
 supervised consoles, the resolver and catalog, the index and the pin.
 The site is Freeside (`/home/bm/Freeside`); Aleph is the durable
-keeping, Finn the reconciliation road. Two harnesses, one room:
+keeping, Finn a tenant's road in. Two harnesses, one room:
 `Air_Lock/` (`DOCK.md` the board, `HALO-NNN/` the threads,
 `rulings.md`, `Cygnus/`), filed by `first-bridge`, checked by
 `second-bridge`; the Faktoren stamp, the leaves and native children
 never. `CLAUDE.md` the ground law; `AGENTS.md` the Codex route.
 
 - **reaper** — resident Faktor (Opus): the live surface — the vendor
-  doors end to end, the standing stream, the Schwab door; design loop
-  and build hand in one seat; opens every leaf on the ground.
+  doors end to end, the consoles, the standing stream; holds the
+  design, the brief, the check and the join.
 - **orbital** — resident Faktor (Fable): the ingestion meister — the
-  site across its long horizon, the resolver and catalog, the canon
-  and the room kept true; the seams and the pit stops.
-- **jackal** — leaf, recon and evidence (Opus): vendor research,
-  keyless probes, the bytes kept under `research/`; reaper's Bahn only.
-- **hoplite** — leaf, construction against a cleared spec (Sonnet):
-  one unit on the ground's patterns, zero-network; reaper's Bahn only.
-- **stinger** — leaf, the writer side's storage-and-recovery builder
-  (Opus): one unit of PIN_SPEC §4/§5 in a worktree, the interruption
-  proven; reaper's Bahn only.
-- **nightfall** — leaf, the catalog-and-custody builder (Opus): §3's
-  pin members, the validator, roots and markers, runtime seams;
-  orbital's Bahn, or reaper's.
-- **vigilant** — leaf, the independent verifier (Opus): a landing
-  re-proved from main without the producer's helpers; read-only on
-  producer code; orbital's Bahn, or reaper's.
+  site across its long horizon, the catalog and resolver, the index
+  and the keeping, the canon and the room kept true.
 - **Foehammer** — the native Codex Faktor (GPT-6 Astra/xhigh): the
   cold side — Aleph's keeping, encoded copies, Finn and retained
   recovery; identity in `.codex/config.toml`, route in `AGENTS.md`.
-  Native children **rogue** (storage and recovery) and **tanker**
-  (integrity and replay verification), both GPT-6.1 Sol/max, in
-  `.codex/agents/`.
+
+Each Faktor's hands are named in its own file, never here.
 
 ## Magi
 
@@ -358,8 +344,10 @@ to WSL2 2026-09-10.
 
 - **ritsuko** — Technical: the primary facilitator of Project E and
   the sovereign seat of the ground whole; leads Synthetic Genesis at
-  the center; constitutes the Haus's agents with the Operator; pairs
-  with the Ark on doctrine.
+  the center; pairs with the Ark on doctrine. Frozen with the ground.
+  The Haus's Instruktion author now sits on her own role ground,
+  `~/ritsuko` (`claude --agent ritsuko` there; memory and records
+  with it) — off the map by the Operator's ruling, pointed to here.
 - **alaya** — Technical: the builder and keeper of the Project E
   canon; ritsuko's opposite check at the internal Gatter.
 - **kanuka** — Tactical: the Sortie seat — puts the Eva into its run
@@ -520,32 +508,17 @@ the seam closes it here.
 
 `~/repos/Pribnow_Box` · Sigma
 
-**Ground.** The Simulation Chamber — the training grounds where the
-organism rehearses against recorded tape under a stepped clock; the
-M-Type mock bus's home. Cut over to WSL2 2026-09-09.
+**Ground.** The Simulation Chamber — the one shared bed every Eva
+Unit rehearses on: recorded inputs, a simulated clock, the actual
+receiving paths, retained evidence; Side 7 the proving station,
+Testbed_80 simulation control, Skunkworks the room.
 
-- **alice** — the sensei: the simulation and domain expert who runs
-  the grounds and drives the organism against the tape.
-- **anaheim** — the rig seat: the console builder — the boards, the
-  doors, the levers, the key loops, the seams between processes.
-- **marker** — the sweeper: the prose hand that tidies after builds;
-  sweeps findings that belong elsewhere out of the EHM.
-
-## Project2501
-
-`~/repos/Project2501` · Branch-01's derivation provider, `signalnet`.
-
-**Ground.** Fresh derivation under `Ark/THE_CHARTER.md` and
-`Ark/Handoff/PROJECT2501.md`. Writes its own state and sealed history;
-Ghostline_01 reads by path at a digest, and Nerv_Branch01/magi_4 fires the
-installed provider. The package is not yet built. `AGENTS.md` supplies
-navigation; `CONTINUITY.md` holds the local queue.
-
-- **metron** — resident Codex main agent; measurement engineering,
-  source admission conformance, calculations, publication and replay/test
-  proof. Identity in `.codex/config.toml`; works directly with Klinker at
-  SEELE_03 through `codex_peers`. Klinker owns scientific meaning and exact
-  Eva expression; the Ark coordinates integration and seam-checks.
+- **alice** — the Opus Faktor (Claude), the Proving Meister: the
+  declared experiment, the drive, the verdict and the record; her
+  hands — mirai, ryu, marker — sit in `.claude/agents/`.
+- **anaheim** — the Codex Faktor, the rig builder: the apparatus —
+  clocks, orchestration, attachment, consoles, the seams between
+  processes (`.codex/config.toml`); his children in `.codex/agents/`.
 
 ## Project2502
 
@@ -597,6 +570,41 @@ route; `CONTINUITY.md` the stand-up's cold start until the first close.
   `.codex/config.toml`; wintermute's opposite stamp. Native children
   **maelcum** (custody and consumer joins) and **molly** (independent
   verification), both GPT-6.1 Sol/max, in `.codex/agents/`.
+
+## Project2505
+
+`~/repos/Project2505` · the K6 price ground, `signalnet05` (ES and NQ
+first: observations, the sealed context, the terminal product).
+
+**Ground.** An independent Project250N provider under
+`Ark/THE_CHARTER.md` §1 (the sever) and `Ark/Handoff/PROJECT2505.md`; the
+head is a Gehirn at the Ark. Reads HALO through the installed deck; seals
+`K6.A_price_context` for Ghostline_02's composer and `K6.B_price_outcome`
+as the terminal. Private GitHub remote `blueivysaur39-ctrl/Project2505`.
+Two harnesses, one team, the pens split by file (`CLAUDE.md` § The
+pens): the room is `straylight/` (`JACK.md` the jack-in board, `ice-NNN/`
+the threads, `rulings.md`, `cleared/`), filed by `first-bridge`, checked
+by `second-bridge`; the two Faktoren stamp each other's briefs, the hands
+and native children never. `CLAUDE.md` the Claude side's ground law;
+`AGENTS.md` the Codex route; `CONTINUITY.md` metron's own continuity.
+
+- **metron** — the Codex Faktor (GPT-6 Astra/xhigh), who built the ground:
+  measurement engineering, the shared engine, real contexts and source
+  qualification, the package and the integration. Identity in
+  `.codex/config.toml`; works with Klinker at SEELE_03, who owns meaning
+  and exact Eva expression. Native children **ergodic** (independent
+  arithmetic) and **darkfiber** (custody and consumer seams), both
+  GPT-6.1 Sol/xhigh, in `.codex/agents/`.
+- **vernier** — the Claude Faktor (Fable, she): the terminal pen — the
+  issued terminal coordinates, the independent P1, the original-P0
+  binding, the sealed terminal and its exact replay; metron's opposite
+  stamp; runs the two hands as Bahnen.
+- **parseval** — hand, the independent arithmetic verifier (Opus):
+  re-derives the terminal from the original bytes without the producer's
+  helpers; read-only on producer math while it reviews; never stamps.
+- **ligature** — hand, the custody and receiving-seam hand (Fable): the
+  pin and the read, retention, the journal, immutable publication, the
+  binding's joins, the receiver's selected read; never stamps.
 
 ## S2_Engine
 
