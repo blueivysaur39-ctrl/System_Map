@@ -64,6 +64,7 @@ is enough).
 | knox | Nerv_Branch01 | | xerxes | S2_Engine |
 | aramaki | Ark | | borma | Ark |
 | batou | Ark | | ishikawa | Ark |
+| gotoh | Ark | | asuma | Ark |
 | 0xWIRE | Ghostline_02 | | splitter | Ghostline_02 |
 | bluebox | Ghostline_02 | | vblank | Ghostline_02 |
 | parallax | Ghostline_02 | | | |
@@ -83,22 +84,24 @@ is enough).
 | kalman | Nerv_04 | | puppetmaster | Nerv_04 |
 | logicoma-1 | Nerv_04 | | logicoma-2 | Nerv_04 |
 | logicoma-3 | Nerv_04 | | | |
-| foehammer | HALO | | | |
+| foehammer | HALO | | argonaut | HALO |
+| wraith | HALO | | | |
 | sr1-melchior | Magi | | sr1-balthasar | Magi |
 | sr1-casper | Magi | | | |
+| vesper | Vesper | | | |
 
 ## By planet (scan)
 
 | planet | location | division | seats |
 |---|---|---|---|
 | [AAA_Wunder](#aaa_wunder) | `~/repos/AAA_Wunder` | Technical | saratoga · wildcat · hornet · sears |
-| [Ark](#ark) | `~/repos/Ark` | EXEC | gendo · cartographer · aramaki |
+| [Ark](#ark) | `~/repos/Ark` | EXEC | gendo · cartographer · aramaki · gotoh (Gemini) |
 | [Armament_Grid](#armament_grid) | `~/repos/Armament_Grid` | CENTCOM + Tactical | hazop · misato · venator |
 | [Gewebe](#gewebe) | `~/repos/Gewebe` | S.C. | — (the MAGI, from Magi) |
 | [Ghostline_01](#ghostline_01) | `~/repos/Ghostline_01` | ? | — (frozen; Branch-01's, read-only) |
 | [Ghostline_02](#ghostline_02) | `~/repos/Ghostline_02` | ? | 0xWIRE · splitter · parallax · folio · concord · bluebox · vblank |
 | [GTypeEquipment](#gtypeequipment) | `C:\GTypeEquipment` | Tactical | — |
-| [HALO](#halo) | `~/repos/HALO` | CENTCOM | reaper · orbital · Foehammer (Codex) |
+| [HALO](#halo) | `~/repos/HALO` | CENTCOM | reaper · orbital · Foehammer (Codex) · argonaut (Gemini) · wraith (Gemini) |
 | [Magi](#magi) | `~/repos/Magi_1` | S.C. + Technical | melchior-1 · balthasar-2 · casper-3 · sr1-melchior · sr1-balthasar · sr1-casper |
 | [Nerv_HQ](#nerv_hq) | `~/repos/Nerv_HQ` | Technical + Tactical | ritsuko · alaya · kanuka |
 | [Nerv_Branch01](#nerv_branch01) | `~/repos/Nerv_Branch01` | Technical | lexington · sampson · knox · hopper · phantom · tomcat · melchior-4 · balthasar-5 · casper-6 |
@@ -116,6 +119,7 @@ is enough).
 | [SEELE_02](#seele_02) | `~/repos/SEELE_02` | SEELE | sledge · cinder · anvil · ingot |
 | [SEELE_03](#seele_03) | `~/repos/SEELE_03` | SEELE | klinker · didymus · golgotha |
 | [Tiferet](#tiferet) | `~/repos/Tiferet` | Tragwerk | azael · baraqiel · kokabiel · penemue · sariel · shamsiel |
+| [Vesper](#vesper) | `~/repos/Vesper` | ? | vesper (Gemini) |
 | [Viper](#viper) | `~/repos/Viper` | ? | viper |
 
 ---
@@ -178,6 +182,15 @@ mail in `Poststelle/`.
   **batou** for complete source-to-Unit performance and freshness; **ishikawa**
   for structured derivation through Markdown to actual Unit input. Aramaki retains
   the office's decisions and integration; owning grounds implement.
+- **gotoh** *(Gemini)* — native Gemini Faktor, holding scenario, terrain and
+  provenance/velocity balance together: `Poststelle` and `regelkreis` control
+  loop, cross-ground centralization and Operator relays, and Charter 11/13–17
+  discipline across `HALO`, `Project250N`, `Ghostline` and `Nerv`; capsule at
+  `.agents/agents/gotoh/agent.md`, delta in `GEMINI.md`. Native subagent
+  **asuma** (`.agents/agents/asuma/agent.md`, `model: inherit`) carries deep
+  cross-ground seam traces, forward-and-return reader sweeps, byte/scaling
+  audits and independent second reads. Gotoh retains heads, correspondence and
+  the done-call.
 
 ## Armament_Grid
 
@@ -186,6 +199,9 @@ mail in `Poststelle/`.
 **Ground.** The far side of the order bus: the Concealed Battery (the
 armor — the check chains, the account law, the fill capture) and the
 NinjaTrader platform door. Every Eva order lives or dies across it.
+By the Operator's ruling of 2026-11-12 the Grid runs its own console
+for its own hulls (THE_CHARTER line 2); none stands yet, and its
+replicator hull is held unarmed.
 
 - **hazop** — CENTCOM: sole custodian of the NinjaTrader platform
   connection, the system's one door to the exchange side (Carrier
@@ -204,7 +220,10 @@ NinjaTrader platform door. Every Eva order lives or dies across it.
 Python package (`bm.fangs`, the fang registry, WaveCollapse); the
 construction canon is `bm-engineer`. No resident seat — the three
 MAGI own it from the Magi ground: a symbol, a session window, a
-clock is asked there.
+clock is asked there. The registry's futures front lines
+(`feeds.price_symbol`) pass to HALO's Faktoren's pen by the Operator's
+ruling of 2026-11-12, once the MAGI write it into Gewebe's law (Ark
+Gehirn-028); until then every roll is a MAGI commit.
 
 ## Ghostline_01
 
@@ -280,6 +299,10 @@ Munitionsaufzug.
 **Ground.** The raw market-data ingestion layer and the raw-data site
 — the system's one observation surface: the pull fangs, the
 supervised consoles, the resolver and catalog, the index and the pin.
+Since 2026-11-12 HALO runs its own scheduler console, an instance of
+the Magi's engine installed from the shelf wheel, and it is the clock
+for the data day (THE_CHARTER line 6; Ark Gehirn-028): the magazine is
+`magazine/`, the config `launch/halo_console.yaml`.
 The site is Freeside (`/home/bm/Freeside`); Aleph is the durable
 keeping, Finn a tenant's road in. Two harnesses, one room:
 `Air_Lock/` (`DOCK.md` the board, `HALO-NNN/` the threads,
@@ -296,15 +319,27 @@ never. `CLAUDE.md` the ground law; `AGENTS.md` the Codex route.
 - **Foehammer** — the native Codex Faktor (GPT-6 Astra/xhigh): the
   cold side — Aleph's keeping, encoded copies, Finn and retained
   recovery; identity in `.codex/config.toml`, route in `AGENTS.md`.
+- **argonaut** *(Gemini)* — the resident Gemini Faktor: expeditionary
+  construction, verification and build-lane execution across the
+  observation and keeping surface whole; capsule at
+  `.agents/agents/argonaut/agent.md`, delta in `GEMINI.md`.
+- **wraith** *(Gemini, Hydrogen)* — the resident Gemini Faktor:
+  `bm-engineer`-first end-to-end construction, consuming-path proof,
+  cross-checking and integration across the observation and keeping
+  surface whole; capsule at `.agents/agents/wraith/agent.md`, delta in
+  `GEMINI.md`.
 
 Each Faktor's hands are named in its own file, never here.
 
 ## Magi
 
-`~/repos/Magi_1` (renamed from `Magi` 2026-10-13 15:46 MDT; import name `magi`; the one engine — THE_CHARTER r4 line 2; native Ubuntu 24.04, ext4) · S.C. + Technical
+`~/repos/Magi_1` (renamed from `Magi` 2026-10-13 15:46 MDT; import name `magi`; the one engine — THE_CHARTER r5 line 2; native Ubuntu 24.04, ext4) · S.C. + Technical
 
-**Ground.** The integrator and sole integration environment;
-orchestration and the schedule — where Netzach fires. Three MAGI, one
+**Ground.** The engine's source ground: Netzach, the one engine, which
+every console runs as an installed wheel, and Gewebe. Since 2026-11-12
+it schedules for no other ground (THE_CHARTER lines 2 and 6; Ark
+Gehirn-028): each ground that schedules runs its own console; its own
+console arms nothing. Three MAGI, one
 ground, three lenses; one room, `conclave/` (`JACK.md` the board,
 `salvo-NNN/` the threads, `rulings.md`, `cleared/`), filed by
 `first-bridge`, checked by `second-bridge`. Each MAGI opens every
@@ -723,6 +758,20 @@ Shevu'ah: kokabiel leads; every Watcher rides the others' Sha'arim.
 - **sariel** — the reckoner: the accuracy check that reads a rendered
   obol back against the state and the law it was rendered from;
   SEALED or HELD.
+
+## Vesper
+
+`~/repos/Vesper` · `?`
+
+**Ground.** The Gemini terminal seat — Kitty and the Python TUI layer
+(`kitty.conf`, `tab_bar.py`, launcher kittens) that brings the
+Operator's concurrent Antigravity (`agy`) agents into one native Linux
+cockpit. The live config is `~/.config/kitty` (its own local git repo);
+this repo is the Kontor.
+
+- **vesper** *(Gemini)* — architect of Kitty and the Gemini cockpit:
+  ports and refactors terminal ergonomics into idiomatic Kitty config,
+  custom Python tab chrome, and rapid-onboarding seat kittens.
 
 ## Viper
 
