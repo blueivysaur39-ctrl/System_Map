@@ -87,7 +87,8 @@ is enough).
 | foehammer | HALO | | argonaut | HALO |
 | wraith | HALO | | | |
 | sr1-melchior | Magi | | sr1-balthasar | Magi |
-| sr1-casper | Magi | | | |
+| sr1-casper | Magi | | sakaki | Magi |
+| shiba | Magi | | shinohara | Magi |
 | vesper | Vesper | | | |
 
 ## By planet (scan)
@@ -102,7 +103,7 @@ is enough).
 | [Ghostline_02](#ghostline_02) | `~/repos/Ghostline_02` | ? | 0xWIRE · splitter · parallax · folio · concord · bluebox · vblank |
 | [GTypeEquipment](#gtypeequipment) | `C:\GTypeEquipment` | Tactical | — |
 | [HALO](#halo) | `~/repos/HALO` | CENTCOM | reaper · orbital · Foehammer (Codex) · argonaut (Gemini) · wraith (Gemini) |
-| [Magi](#magi) | `~/repos/Magi_1` | S.C. + Technical | melchior-1 · balthasar-2 · casper-3 · sr1-melchior · sr1-balthasar · sr1-casper |
+| [Magi](#magi) | `~/repos/Magi_1` | S.C. + Technical | melchior-1 · balthasar-2 · casper-3 · sr1-melchior · sr1-balthasar · sr1-casper · sakaki (Gemini) |
 | [Nerv_HQ](#nerv_hq) | `~/repos/Nerv_HQ` | Technical + Tactical | ritsuko · alaya · kanuka |
 | [Nerv_Branch01](#nerv_branch01) | `~/repos/Nerv_Branch01` | Technical | lexington · sampson · knox · hopper · phantom · tomcat · melchior-4 · balthasar-5 · casper-6 |
 | [Nerv_Branch02](#nerv_branch02) | `~/repos/Nerv_Branch02` | Technical | hellcat · widow · coke |
@@ -361,6 +362,15 @@ sub-routine; a sub-routine returns evidence or a patch under
 - **sr1-casper** — sub-routine, the seam trace (Sonnet): one crossing
   end to end — producer, every consumer, the clock each reads at —
   the break reproduced; a capture or a roll as the bounded unit.
+- **sakaki** *(Gemini)* — native Gemini Faktor across `Magi_1` and `Gewebe`,
+  holding the exported `magi` automation engine wheel and the shared `gewebe`
+  substrate together beside the three MAGI: wheel-installed console truth,
+  cross-ground contract/calendar/roll seams, and off-tree engineering; capsule at
+  `.agents/agents/sakaki/agent.md`, delta in `GEMINI.md`. Native `model: pro`
+  subagents **shiba** (`.agents/agents/shiba/agent.md` — cross-ground seam, roll
+  and substrate tracer) and **shinohara** (`.agents/agents/shinohara/agent.md` —
+  off-tree engine, wheel and fault-containment bench). Sakaki retains `conclave/`
+  ink, stamps, correspondence, commits and the done-call.
 
 ## Nerv_HQ
 
