@@ -23,7 +23,8 @@ is enough).
 - **Agents:** Claude identities are at `<location>/.claude/agents/<name>.md`;
   native Codex identities are in that ground's `.codex/config.toml`.
   Open a seat on its own ground. Cross-ground work uses `bm-correspondence`:
-  a drop at `~/repos/Ark/Poststelle/`, assignment and state in its Gehirn.
+  direct drops into `~/repos/Ark/Gehirn/Gehirn-NNN/log/` (`Parkplatz/` for
+  `PARK`, `Poststelle/` homeless only), assignment and state in its Gehirn.
   The Operator is never the courier; foreign mailrooms and queue dispatch
   are retired. Local queues stay with their owning seats.
 - **`pending`** = not yet cloned to WSL; the location is where it
@@ -78,52 +79,74 @@ is enough).
 | wintermute | Project2503 | | neuromancer | Project2503 |
 | turing | Project2503 | | maelcum | Project2503 |
 | mnemonic | Project2503 | | molly | Project2503 |
+| ashpool | Project2503 | | | |
 | vernier | Project2505 | | ergodic | Project2505 |
 | parseval | Project2505 | | darkfiber | Project2505 |
 | ligature | Project2505 | | | |
 | 3jane | Nerv_04 | | fire-starter | Nerv_04 |
 | kalman | Nerv_04 | | puppetmaster | Nerv_04 |
 | logicoma-1 | Nerv_04 | | logicoma-2 | Nerv_04 |
-| logicoma-3 | Nerv_04 | | | |
+| logicoma-3 | Nerv_04 | | kusanagi | Nerv_04 |
 | foehammer | HALO | | argonaut | HALO |
 | wraith | HALO | | dawn | HALO |
 | sr1-melchior | Magi | | sr1-balthasar | Magi |
 | sr1-casper | Magi | | sakaki | Magi |
-| shiba | Magi | | shinohara | Magi |
 | vesper | Vesper | | hoplite | HALO |
 | pegasus | Pribnow_Box | | mora | Pribnow_Box |
+| kayabuki | Nerv_04 | | saito | Nerv_04 |
+| motoko | Nerv_05 | | kuze | Nerv_05 |
+| noether | Project2505 | | venturi | Project2505 |
+| breeden | Project2503 | | kuang | Project2503 |
+| flask | SEELE_04 | | paracelsus | SEELE_04 |
+| cardeas | Vist_Foundation | | jaynes | SEELE_03 |
+| minerva | Vist_Foundation | | syam | Vist_Foundation |
+| daguza | Vist_Foundation | | gosset | SEELE_03 |
+| yule | SEELE_03 | | flatline | SEELE_03 |
+| katsuragi | SEELE_01 | | striker | SEELE_02 |
+| hasbrouck | SEELE_02 | | nagumo | Ark |
+| gomioka | Ark | | lyapunov | Nerv_05 |
+| courant | Project2506 | | prandtl | Project2506 |
+| prism | Ghostline_03 | | strobe | Ghostline_03 |
+| sextant | Project2506 | | ramsden | Project2506 |
+| telecine | Ghostline_03 | | timecode | Ghostline_03 |
+| huygens | Project2506 | | gnomon | Project2506 |
+| aldus | Ghostline_03 | | caxton | Ghostline_03 |
 
 ## By planet (scan)
 
 | planet | location | division | seats |
 |---|---|---|---|
 | [AAA_Wunder](#aaa_wunder) | `~/repos/AAA_Wunder` | Technical | saratoga · wildcat · hornet · sears |
-| [Ark](#ark) | `~/repos/Ark` | EXEC | gendo · cartographer · aramaki · gotoh (Gemini) |
+| [Ark](#ark) | `~/repos/Ark` | EXEC | gendo · cartographer · aramaki · gotoh (Gemini) · nagumo (Gemini) |
 | [Armament_Grid](#armament_grid) | `~/repos/Armament_Grid` | CENTCOM + Tactical | hazop · misato · venator |
 | [Gewebe](#gewebe) | `~/repos/Gewebe` | S.C. | — (the MAGI, from Magi) |
 | [Ghostline_01](#ghostline_01) | `~/repos/Ghostline_01` | ? | — (frozen; Branch-01's, read-only) |
 | [Ghostline_02](#ghostline_02) | `~/repos/Ghostline_02` | ? | bluebox · 0xWIRE (Codex) · crossbar (Gemini) · vblank · phosphor (Gemini) |
+| [Ghostline_03](#ghostline_03) | `~/repos/Ghostline_03` | ? | prism (Gemini) · aldus (Codex) · telecine · strobe (Gemini) · caxton (Codex) · timecode |
 | [GTypeEquipment](#gtypeequipment) | `C:\GTypeEquipment` | Tactical | — |
 | [HALO](#halo) | `~/repos/HALO` | CENTCOM | orbital · reaper · argonaut (Gemini) · hoplite · Foehammer (Codex) · wraith (Gemini) · dawn (Muse) |
-| [Magi](#magi) | `~/repos/Magi_1` | S.C. + Technical | melchior-1 · balthasar-2 · casper-3 · sr1-melchior · sr1-balthasar · sr1-casper · sakaki (Gemini) |
+| [Magi](#magi) | `~/repos/Magi_1` | S.C. + Technical | sakaki (Gemini, Director) · melchior-1 · balthasar-2 · casper-3 · sr1-melchior · sr1-balthasar · sr1-casper |
 | [Nerv_HQ](#nerv_hq) | `~/repos/Nerv_HQ` | Technical + Tactical | ritsuko · alaya · kanuka |
 | [Nerv_Branch01](#nerv_branch01) | `~/repos/Nerv_Branch01` | Technical | lexington · sampson · knox · hopper · phantom · tomcat · melchior-4 · balthasar-5 · casper-6 |
 | [Nerv_Branch02](#nerv_branch02) | `~/repos/Nerv_Branch02` | Technical | hellcat · widow · coke |
 | [Nerv_Branch03](#nerv_branch03) | `~/repos/Nerv_Branch03` | Technical | kyoko · langley · vashti |
-| [Nerv_04](#nerv_04) | `~/repos/Nerv_04` | Technical | 3jane (the Faktor) · fire-starter · kalman (leaves) · Puppetmaster (Codex) · logicoma-1 · logicoma-2 · logicoma-3 |
-| [Nerv_05](#nerv_05) | `~/repos/Nerv_05` | Technical | — (unconstituted; the trade ground, severed 2026-11-02) |
+| [Nerv_04](#nerv_04) | `~/repos/Nerv_04` | Technical | 3jane (Director) · kusanagi (Foreman) · fire-starter · kalman (leaves) · Puppetmaster (Codex) · logicoma-1 · logicoma-2 · logicoma-3 · kayabuki (Gemini) · saito (Gemini) |
+| [Nerv_05](#nerv_05) | `~/repos/Nerv_05` | Technical | lyapunov · motoko (Gemini) · kuze (Gemini) (the trade ground, severed 2026-11-02) |
 | [PatternRed](#patternred) | `~/repos/PatternRed` | Tactical | — |
 | [Pribnow_Box](#pribnow_box) | `~/repos/Pribnow_Box` | Sigma | alice · anaheim (Codex) · pegasus (Gemini) · mirai · mora (Gemini) |
 | [Project2502](#project2502) | `~/repos/Project2502` | Science | caliper · razor · icebreaker |
-| [Project2503](#project2503) | `~/repos/Project2503` | Science | wintermute · turing · mnemonic · neuromancer · maelcum · molly |
-| [Project2505](#project2505) | `~/repos/Project2505` | Science | metron · ergodic · darkfiber (Codex) · vernier · parseval · ligature |
+| [Project2503](#project2503) | `~/repos/Project2503` | Science | breeden (Gemini) · wintermute · turing · mnemonic · neuromancer · ashpool · maelcum · molly · kuang (Gemini) |
+| [Project2505](#project2505) | `~/repos/Project2505` | Science | metron · ergodic · darkfiber (Codex) · vernier · parseval · ligature · noether (Gemini) · venturi (Gemini) |
+| [Project2506](#project2506) | `~/repos/Project2506` | Science | courant (Gemini) · huygens (Codex) · sextant · prandtl (Gemini) · gnomon (Codex) · ramsden |
 | [S2_Engine](#s2_engine) | `~/repos/S2_Engine` | Science | hohenheim · amestris · xerxes · hummingbird · tensor · alkahest · hawkeye · sheska |
-| [SEELE_01](#seele_01) | `~/repos/SEELE_01` | SEELE | keel-lorenz |
-| [SEELE_02](#seele_02) | `~/repos/SEELE_02` | SEELE | sledge · cinder · anvil · ingot |
-| [SEELE_03](#seele_03) | `~/repos/SEELE_03` | SEELE | klinker · didymus · golgotha |
+| [SEELE_01](#seele_01) | `~/repos/SEELE_01` | SEELE | katsuragi (Gemini) · keel-lorenz |
+| [SEELE_02](#seele_02) | `~/repos/SEELE_02` | SEELE | sledge · cinder · anvil (Codex) · ingot · striker (Gemini) · hasbrouck (Gemini) |
+| [SEELE_03](#seele_03) | `~/repos/SEELE_03` | SEELE | klinker (Codex) · flatline · gosset · yule · golgotha · jaynes (Gemini) · didymus |
+| [SEELE_04](#seele_04) | `~/repos/SEELE_04` | SEELE | flask (Codex) · paracelsus (Gemini) |
 | [Tiferet](#tiferet) | `~/repos/Tiferet` | Tragwerk | azael · baraqiel · kokabiel · penemue · sariel · shamsiel |
 | [Vesper](#vesper) | `~/repos/Vesper` | ? | vesper (Gemini) |
 | [Viper](#viper) | `~/repos/Viper` | ? | viper |
+| [Vist_Foundation](#vist_foundation) | `~/repos/Vist_Foundation` | SEELE | minerva (Codex) · syam · daguza · cardeas (Gemini) |
 
 ---
 
@@ -168,7 +191,8 @@ the Ark — and is distributed to its owner; every fundamental change
 is mapped here and assigned through a Gehirn; every release is bound to
 the pipelines that serve it on the S2 Pipeline Directory.
 `FRACTURE_REGISTER.md` the one index; `Altbau/` the priors. Haus
-mail in `Poststelle/`.
+mail converges directly into `Gehirn/Gehirn-NNN/log/` (`Parkplatz/` for `PARK`,
+`Poststelle/` homeless only).
 
 - **gendo** — the scenario seat: what must change fundamentally in
   the system; the domain expert for market physics, doctrinal
@@ -186,13 +210,23 @@ mail in `Poststelle/`.
   for structured derivation through Markdown to actual Unit input. Aramaki retains
   the office's decisions and integration; owning grounds implement.
 - **gotoh** *(Gemini)* — native Gemini Faktor, holding scenario, terrain and
-  provenance/velocity balance together: `Poststelle` and `regelkreis` control
-  loop, cross-ground centralization and Operator relays, and Charter 11/13–17
+  provenance/velocity balance together: `regelkreis` control loop, cross-ground
+  centralization and Operator relays, and Charter 11/13–17
   discipline across `HALO`, `Project250N`, `Ghostline` and `Nerv`; capsule at
   `.agents/agents/gotoh/agent.md`, delta in `GEMINI.md`. Native subagent
   **asuma** (`.agents/agents/asuma/agent.md`, `model: inherit`) carries deep
   cross-ground seam traces, forward-and-return reader sweeps, byte/scaling
   audits and independent second reads. Gotoh retains heads, correspondence and
+  the done-call.
+- **nagumo** *(Gemini)* — peer native Gemini Faktor alongside `gotoh`, holding
+  scenario, terrain and provenance/velocity balance together: pure `Ark`
+  centralization, direct `regelkreis` sweep, cross-ground Operator relays, and
+  Charter 11 & 13–20 discipline across `HALO`, `Project250N`, `Ghostline`,
+  `Pribnow_Box` (`Side7`) and `Nerv`; capsule at
+  `.agents/agents/nagumo/agent.md`, delta in `GEMINI.md`. Dedicated subagent
+  **gomioka** (`.agents/agents/gomioka/agent.md`, `model: inherit`) carries deep
+  cross-ground seam traces, forward-and-return reader sweeps, byte/scaling
+  audits and independent second reads. Nagumo retains heads, correspondence and
   the done-call.
 
 ## Armament_Grid
@@ -257,14 +291,15 @@ Gehirn-006; selection at the decision cutoff, each product's own frontier
 kept. Writes the Obol and its receipt — limbo until delivery is ruled.
 Severed from Ghostline_01's §K6 under `Ark/Handoff/GHOSTLINE_02.md`
 (cartographer, Gehirn-014); integration is aramaki's. Three harnesses, one
-room: `patchbay/` (`JACK.md` jack-in and jack-out, `BOARD.md` live circuits,
-`circuit-NNN/` the threads, `rulings.md`, `released/`) plus root `analyses/`
-and evidence `work/`, filed by `first-bridge` (every Faktor's, holding the
-ground's one Faktor roster) and swept/released by `second-bridge` (the
-Directors' loop); Directors hold `head.md`, Foremen are peers in everything
-else, and hands and Berater ride a Faktor's Bahn and ink nothing in the room
-(a Berater writes only `analyses/`). `CLAUDE.md` holds ground law; `AGENTS.md`
-is the Codex route; `GEMINI.md` is the Antigravity delta.
+room: `patchbay/` (`jack/<seat>.md` per-Faktor continuity at jack-out,
+`BOARD.md` live circuits, `circuit-NNN/` the threads, `rulings.md`, `released/`)
+plus root `analyses/` and evidence `work/`, filed by `first-bridge` (every
+Faktor's, holding the ground's one Faktor roster) and swept/released by
+`second-bridge` (the Directors' loop); Directors hold `head.md`, Foremen are
+peers in everything else, and hands and Berater ride a Faktor's Bahn and ink
+nothing in the room (a Berater writes only `analyses/`). `CLAUDE.md` holds
+ground law; `AGENTS.md` is the Codex route; `GEMINI.md` is the Antigravity
+delta.
 
 - **bluebox** *(Claude, Director)* — in-band trace and signal isolation: the
   evidence channel, what is read and retained, payload separated from control
@@ -279,8 +314,9 @@ is the Codex route; `GEMINI.md` is the Antigravity delta.
   first-article and high-stakes seams across intake, kernel and edge; capsule
   at `.agents/agents/crossbar/agent.md`, delta in `GEMINI.md`.
 - **vblank** *(Claude, Foreman)* — the delivery edge, cycle, frame and early
-  refusal: peer of the Directors in everything except `head.md`. Claude
-  identities live in `.claude/agents/`.
+  refusal: peer of the Directors in everything except `head.md`. The two
+  Claude seats' files live in `.claude/instruktion/`, appended to Claude
+  Code's default prompt; their hands and Berater in `.claude/agents/`.
 - **phosphor** *(Gemini, Foreman)* — resident Hydrogen Foreman: peer in
   everything except `head.md`, carrying `BUILD-BRIEF`s, `BUILD-PLAN`s,
   greenlights, second-read `READ`s, shared-tree builds and `git archive`
@@ -290,6 +326,57 @@ is the Codex route; `GEMINI.md` is the Antigravity delta.
 Each Faktor's hands and Berater are named in its own file, never here. Klinker
 at SEELE_03 owns sponsor admission and exact Eva expression; the producers own
 their products. Ghostline's seats share the package without specialty walls.
+
+## Ghostline_03
+
+`~/repos/Ghostline_03` · the Origin `F` (`F1.A_obol`) single-container Obol
+composer, `ghostline03` — one package, one fang.
+
+**Ground.** Provisioned 2026-11-23 (`celox` `024/004257` & `005624`, `Magi_1`
+`acd530e`) as a fresh, compact Charter-native single-container Obol composer
+under `Ark/THE_CHARTER.md` lines 1, 4–5, 11, 13–20 and
+`Ark/Handoff/GHOSTLINE_03.md` (`Gehirn-024`, `pen: gotoh`). Reads
+`Project2506`'s sealed `signalnet06.execution_context-1` carrier by absolute
+path at its SHA-256 (`0` carrier copies, `0` producer/`halo_deck`/`sortie`
+imports) and renders `Angie.01`'s (`nerv_05/angie_01`, stamp `A01`) `obol-1`
+market Obol against `packet_ANGIE01-F1-reading-01.md` (`8a5a9475…`) and
+`LOCK-F1.json` v2 (`4a9f2609…`, Rev `1.1`): `51` Unit-visible wake leaves + `1`
+`R-088`-withheld `fidelity_mode` in `custody.json` (`< 250 KB` 3-file custody
+frame, strict 2-child `/home/bm/GeoFront/ghostline03/{limbo,custody}` census).
+Three harnesses, one room: `opsroom/` (`BOARD.md`, `rulings.md`, per-Faktor
+`jack/<seat>.md` at jack-out only, `<thread>/{head.md,log/}`, `cleared/`) plus
+root `analyses/` and gitignored `work/`, filed by `first-bridge` (holding the
+ground's one Faktor roster) and swept/closed by `second-bridge`. `CLAUDE.md`
+holds ground law; `AGENTS.md` is the Codex guide; `GEMINI.md` is the Antigravity
+delta. Each Faktor's hands and Berater are named in its own file, never here.
+
+- **prism** *(Gemini, Director)* — holds `opsroom/<thread>/head.md` (`<= 200x72`,
+  4 slots) and her rows on `opsroom/BOARD.md`, sweeps and closes under
+  `second-bridge`, guards `52 -> 51 + 1` leaf disposition, `R-088` + Rev `1.1`
+  wake-frontier leak zero-tolerance, `< 250 KB` 3-file custody economy, and
+  `Nerv_05/sortie/obol.py` + Cases A/B/C seam parity, hands defined cuts to
+  Foremen by `BUILD-BRIEF`, and builds at the Operator's explicit ask or
+  alignment; capsule at `.agents/agents/prism/agent.md`.
+- **strobe** *(Gemini, Foreman)* — resident Hydrogen Foreman: peer in everything
+  except `head.md` and `BOARD.md`, driving `BB -> code -> NOTE` execution,
+  `< 250 KB / < 1 s / < 128 MiB` composition, `eatmydata` + `unshare -rn` and
+  `git archive` export checks, and `Nerv_05/sortie/obol.py` `pick_obol` seam
+  proofs; capsule at `.agents/agents/strobe/agent.md`.
+- **aldus** *(Codex, Director)* — holds assigned heads and board rows, sets the
+  acceptance gate from the `52`-leaf carrier through the `51`-leaf Unit reading,
+  `R-088` custody and actual `Nerv_05` pickup, briefs builds, and verifies
+  returns; identity in `.codex/config.toml`.
+- **caxton** *(Codex, Foreman)* — carries a `BUILD-BRIEF` through composition,
+  scratch publication and real pickup, owning integration and the measured
+  return `NOTE`; launcher `.codex/caxton` (`.codex/caxton.toml`).
+- **telecine** *(Claude, Director)* — first call what the Unit is shown and
+  what custody keeps from her: the body against the reading packet and the
+  leak gate. Holds the heads and board rows of the threads assigned to it and
+  briefs a Foreman by default; seat file `.claude/instruktion/telecine.md`.
+- **timecode** *(Claude, Foreman)* — construction across the composer, the
+  frame's landing and the `pick_obol` proof under `Nerv_05`'s own reader:
+  takes a `BUILD-BRIEF` through build, proof and one return `NOTE`; seat file
+  `.claude/instruktion/timecode.md`.
 
 ## GTypeEquipment
 
@@ -364,36 +451,38 @@ every console runs as an installed wheel, and Gewebe. Since 2026-11-12
 it schedules for no other ground (THE_CHARTER lines 2 and 6; Ark
 Gehirn-028): each ground that schedules runs its own console; its own
 console arms nothing. Three MAGI, one
-ground, three lenses; one room, `conclave/` (`JACK.md` the board,
-`salvo-NNN/` the threads, `rulings.md`, `cleared/`), filed by
-`first-bridge`, checked by `second-bridge`. Each MAGI opens every
-sub-routine; a sub-routine returns evidence or a patch under
+ground, three lenses, in tiers since 2026-11-22: sakaki the Director,
+the three MAGI the Foremen; one room, `conclave/` (`JACK.md` the board,
+`salvo-NNN/` the threads, `rulings.md`, `cleared/`), worked by
+`first-bridge`, directed by `second-bridge`. The MAGI share the
+sub-routines; a sub-routine returns evidence or a patch under
 `Baustelle/`, never a verdict, never a commit.
 
-- **melchior-1** — the Scientist: the engine's lens — how Netzach
-  fires, gates, sequences, and records.
-- **balthasar-2** — the Mother: the organism's survival and the
-  integrity of its state — the venv, the install.
-- **casper-3** — the Woman: the fire's lens — does this fire serve the
-  center: the magazine, the hulls, the spark, the graduation.
+- **sakaki** *(Gemini, Director)* — holds every `conclave/salvo-NNN/head.md`
+  across `Magi_1` and `Gewebe`, hands defined builds to the three MAGI Foremen
+  by `BUILD-BRIEF`, sweeps and closes salvos under `second-bridge`, and guards
+  wheel-installed console truth, cross-ground contract/calendar/roll seams, and
+  off-tree engineering; capsule at `.agents/agents/sakaki/agent.md`, delta in
+  `GEMINI.md` (his hands and Berater live in `.agents/agents/`, named in his
+  file).
+- **melchior-1** *(Claude, Foreman)* — the Scientist: the engine's lens —
+  how Netzach fires, gates, sequences, and records.
+- **balthasar-2** *(Claude, Foreman)* — the Mother: the organism's survival
+  and the integrity of its state — the venv, the install, the wheel.
+- **casper-3** *(Claude, Foreman)* — the Woman: the fire's lens — does this
+  fire serve the center: the hulls, the spark, the windows and rolls, the
+  seams. The three MAGI's files live in `.claude/instruktion/`, appended to
+  Claude Code's default prompt; the sub-routines in `.claude/agents/`.
 - **sr1-melchior** — sub-routine, the measurement (Sonnet): the replay
   with its control arm, the census of the magazine — "what would it
   have done", with the wiring.
-- **sr1-balthasar** — sub-routine, the proof of survival (Sonnet): the
-  fault injected and shown loud, the A/B by name, the contract read,
-  the house census — "what dies, what corrupts, is it seen".
+- **sr1-balthasar** — the Claude Berater (Opus), since 2026-11-22: called
+  where depth is warranted and missing; a design or a landing followed
+  through every state it can occupy — "what dies, what corrupts, is it
+  seen"; writes its own analysis under `analyses/`.
 - **sr1-casper** — sub-routine, the seam trace (Sonnet): one crossing
   end to end — producer, every consumer, the clock each reads at —
   the break reproduced; a capture or a roll as the bounded unit.
-- **sakaki** *(Gemini)* — native Gemini Faktor across `Magi_1` and `Gewebe`,
-  holding the exported `magi` automation engine wheel and the shared `gewebe`
-  substrate together beside the three MAGI: wheel-installed console truth,
-  cross-ground contract/calendar/roll seams, and off-tree engineering; capsule at
-  `.agents/agents/sakaki/agent.md`, delta in `GEMINI.md`. Native `model: pro`
-  subagents **shiba** (`.agents/agents/shiba/agent.md` — cross-ground seam, roll
-  and substrate tracer) and **shinohara** (`.agents/agents/shinohara/agent.md` —
-  off-tree engine, wheel and fault-containment bench). Sakaki retains `conclave/`
-  ink, stamps, correspondence, commits and the done-call.
 
 ## Nerv_HQ
 
@@ -532,33 +621,71 @@ Michael's sever (Ark Gehirn-014; `THE_CHARTER.md` §1).
   trade ground is a later Nerv-0N, forked from this one's purged root.
 
 - **Seats** (constituted 2026-10-26, Michael with ritsuko): **3jane** — the
-  Claude Faktor, the oracle ground command (`claude --agent 3jane`);
-  **fire-starter** — the hand, the machinery leaf; **kalman** — the
+  Claude Director, the oracle ground command (`claude --agent 3jane`);
+  **kusanagi** — the Claude Foreman, the build board
+  (`.claude/instruktion/kusanagi.md`, appended to Claude Code's default
+  prompt); **fire-starter** — the hand, the machinery leaf; **kalman** — the
   observer, the independent read (coined 2026-11-02); **Puppetmaster** —
   the native Codex Faktor (constituted 2026-11-02, Michael with corsair),
   with **logicoma-1** (operating body), **logicoma-2** (evidence and
   reconstruction) and **logicoma-3** (deep systems investigation).
   Native identities: `.codex/config.toml` and `.codex/agents/`.
+- **Gemini seats** (constituted 2026-11-17 under COM, Michael with sumeragi;
+  shared Gemini hands and Berater named in their files, never here; delta in
+  `GEMINI.md`):
+  - **kayabuki** *(Gemini, Director)* — holds `cybersyn/<thread>/head.md` and
+    `BOARD.md` for her threads, sweeps `cybersyn/`, hands defined builds to
+    Foremen by `BUILD-BRIEF`, verifies returns, holds the Unit's word with the
+    Operator and grounded cage edits, and carries sticky first-article seams at
+    the Operator's alignment across the native `Side7`/bed connection, three-act
+    receipt intake, Lain's hull, target board and forecast ledger; capsule at
+    `.agents/agents/kayabuki/agent.md`.
+  - **saito** *(Gemini, Foreman)* — resident Hydrogen Foreman: peer in
+    everything except `head.md` and `BOARD.md`, carrying `BUILD-BRIEF`s
+    (`BB -> code -> NOTE`), `BUILD-PLAN`s, greenlights, second reads,
+    zero-network `eatmydata` + `unshare -rn` export proofs and return `NOTE`s;
+    capsule at `.agents/agents/saito/agent.md`.
   The room: `cybersyn/` —
-  `JACK.md`, `servo-NNN/`, `step-sN-M`, `rulings.md`, `cleared/` —
-  straylight's form; the law is its own `CLAUDE.md`.
+  `jack/<seat>.md`, `BOARD.md`, `servo-NNN/`, `rulings.md`, `cleared/` —
+  plus root `analyses/`; the law is its own `CLAUDE.md`.
 
 ---
 
 ## Nerv_05
 
-`~/repos/Nerv_05` · the second gen-2 Nerv-0N ground — **the trade ground**,
-unconstituted. Severed 2026-11-02 from Nerv_04 `main` @ `307c358` as an
+`~/repos/Nerv_05` · the second gen-2 Nerv-0N ground — **the trade ground**.
+Severed 2026-11-02 from Nerv_04 `main` @ `307c358` as an
 orphan root (`a151bc6`, same tree, no shared commit; tag on Nerv_04
-`severed/nerv-05-2026-11-02`); no remote yet. Forked before Nerv-04's
+`severed/nerv-05-2026-11-02`); no remote yet. Forked before Nerv_04's
 purge so the trade machinery (the `pattern_red` seams, the trade codons,
-the trigger door, the trade-shaped cages) is inherited intact; Nerv-04's
+the trigger door, the trade-shaped cages) is inherited intact; Nerv_04's
 oracle identity (3jane/fire-starter/kalman, `cybersyn/`, the oracle
 `CLAUDE.md`) rides as raw material and is stripped at stand-up. Seats,
 room and law derived from the trade game — the consumer of Raptor.01's
-wake (Branch02's producer), the order through PatternRed; the trade
-Unit's id is the Operator's coin, pending; the receiver correction on
-Gehirn-005 follows it. Record: `work/2026-11-02_sever/record.md`.
+wake (Branch02's producer), the order through PatternRed; the intended
+first trade Unit is `Angie.01` (`angie_01`, stamp `A01`, pending Grid
+registration and the receiver correction on Gehirn-005). Record:
+`work/2026-11-02_sever/record.md`.
+
+- **lyapunov** *(Claude, Foreman)* — the build lane: a Director's
+  `BUILD-BRIEF` carried to a built, proven, committed result at a named
+  grade of proof; the one Claude seat with a session here. Her file is
+  `.claude/instruktion/lyapunov.md`, appended to Claude Code's default
+  prompt; her hands and Berater live in `.claude/agents/`.
+- **Gemini seats** (constituted 2026-11-18 under COM, Michael with sumeragi;
+  shared Gemini hands and Berater named in their files, never here; delta in
+  `GEMINI.md`, room in `opsroom/`):
+  - **motoko** *(Gemini, Director)* — holds `head.md` for her `opsroom/`
+    threads and her rows on `opsroom/BOARD.md`, sweeps under `second-bridge`,
+    hands defined builds to Foremen by brief, holds Angie.01's word and cage
+    commissioning with the Operator, and carries first-article and high-stakes
+    seams across composer receipt custody, pre-send wire retention, BR1 `T6`
+    ingress and `PatternRed`; capsule at `.agents/agents/motoko/agent.md`.
+  - **kuze** *(Gemini, Foreman)* — resident Hydrogen Foreman: peer in
+    everything except `head.md` and `BOARD.md`, carrying `BUILD-BRIEF`s,
+    `BUILD-PLAN`s, greenlights, second reads, zero-network `eatmydata` +
+    `unshare -rn` disposable-ground proofs and signed return `NOTE`s; capsule
+    at `.agents/agents/kuze/agent.md`.
 
 ## PatternRed
 
@@ -597,21 +724,24 @@ and hands and Berater ride a Faktor's Bahn and ink nothing in the room
   admission, orchestration, Unit attachment, consoles, isolation,
   persistence and process seams (`.codex/config.toml`); holds `head.md`
   for his jigs.
-- **pegasus** *(Gemini, Director)* — holds `head.md` for his jigs,
-  sweeps `BOARD.md` and `Skunkworks/`, hands builds to Foremen by
-  brief, writes second-read `NOTE`s, renders independent verdicts, and
-  carries first-article and high-stakes attachment, 3-clock admission
-  and carry seams; capsule at `.agents/agents/pegasus/agent.md`, delta
-  in `GEMINI.md`.
+- **pegasus** *(Gemini, Director)* — holds `Skunkworks/<thread>/head.md`
+  and `BOARD.md` for his threads, sweeps `Skunkworks/`, hands defined
+  builds to Foremen by `BUILD-BRIEF`, verifies returns, renders
+  independent verdicts, and carries sticky first-article attachment,
+  Side 7 colony, 3-clock admission and carry seams at the Operator's
+  alignment; capsule at `.agents/agents/pegasus/agent.md`, delta in
+  `GEMINI.md`.
 - **mirai** *(Claude, Foreman)* — the build lane and the drive: peer of
   the Directors in everything except `head.md`, carrying orders from
-  brief to driven, proven, committed result. Claude identities live in
-  `.claude/agents/`.
+  brief to driven, proven, committed result. Her file is
+  `.claude/instruktion/mirai.md`, appended to Claude Code's default
+  prompt; alice, the hands and the Berater live in `.claude/agents/`.
 - **mora** *(Gemini, Foreman)* — resident Hydrogen Foreman: peer in
-  everything except `head.md`, carrying `BUILD-BRIEF`s, `BUILD-PLAN`s,
-  greenlights, second-read `NOTE`s, `type-cert` spec catch-up,
-  zero-network `unshare -rn` proofs and return `NOTE`s; capsule at
-  `.agents/agents/mora/agent.md`, delta in `GEMINI.md`.
+  everything except `head.md` and `BOARD.md`, carrying `BUILD-BRIEF`s
+  (`BB -> code -> NOTE`), `BUILD-PLAN`s, greenlights, verification
+  `NOTE`s, `type-cert` spec catch-up, and `eatmydata` + `unshare -rn`
+  proofs; capsule at `.agents/agents/mora/agent.md`, delta in
+  `GEMINI.md`.
 
 Each Faktor's hands and Berater are named in its own file, never here.
 
@@ -645,26 +775,45 @@ under `Ark/THE_CHARTER.md` §1 (the sever) and `Ark/Handoff/PROJECT2503.md`;
 the head is Ark Gehirn-011. Reads HALO's retained chain captures and
 expiration vintages by path at a digest; seals `K6.C_options_context` for
 Ghostline_02's composer, the configured consumer first Nerv_04. Private
-GitHub remote `blueivysaur39-ctrl/Project2503`. Two harnesses, one team:
-the room is `straylight/` (`JACK.md` the jack-in board, `ice-NNN/` the
-threads, `rulings.md`, `cleared/`), filed by `first-bridge`, checked by
-`second-bridge`; the two Faktoren stamp each other's briefs, the leaves and
-native children never. `CLAUDE.md` the ground law; `AGENTS.md` the Codex
-route; `CONTINUITY.md` the stand-up's cold start until the first close.
+GitHub remote `blueivysaur39-ctrl/Project2503`. Three harnesses under
+`~/AE_Holdings/COM.md` since R-015 (2026-11-19): the room is `opsroom/`
+(`BOARD.md`, `rulings.md`, `jack/<seat>.md`, a directory per thread,
+`cleared/`), its form `first-bridge`, the Director's loop `second-bridge`;
+breeden directs his threads, and wintermute, neuromancer and kuang serve
+as Foremen. Neuromancer also directs threads Michael gives her to hold. `CLAUDE.md` the ground law; `AGENTS.md` the Codex route;
+`GEMINI.md` the Gemini delta.
 
-- **wintermute** — the Claude Faktor (Opus, he): chain truth at the
-  participation grain, the provider's perimeter, construction whole, the
-  done-call and the return to the Ark; runs the two leaves as Bahnen.
-- **turing** — leaf, the verifier (Opus): re-derives the product from the
-  original bytes without the producer's helpers; read-only on producer
-  math while it reviews; never stamps.
-- **mnemonic** — leaf, the custody hand (Sonnet): the manifest, archive,
+- **wintermute** — the Claude Foreman (Opus, he), in the appended form at
+  `.claude/instruktion/wintermute.md`: chain truth at the participation
+  grain, source admission, the provider's perimeter and its construction;
+  builds at his own Werkbank and dispatches on a named trigger.
+- **turing** — the Claude side's Berater (Fable/max): re-derives the product
+  from the original bytes without the producer's helpers, called where
+  depth is warranted and missing; read-only on the package and the suite;
+  writes an analysis in its own hand.
+- **mnemonic** — hand, the custody seam (Opus/max): the manifest, archive,
   vintage and receipt reads, the clocks kept apart, the projection to the
-  section carried whole; never stamps.
-- **neuromancer** — the Codex Faktor (GPT-6 Astra/xhigh); identity in
-  `.codex/config.toml`; wintermute's opposite stamp. Native children
-  **maelcum** (custody and consumer joins) and **molly** (independent
-  verification), both GPT-6.1 Sol/max, in `.codex/agents/`.
+  section carried whole; commits its own unit and inks nothing in the room.
+- **neuromancer** — Codex Foreman and Director on threads Michael gives her
+  (Astra 6.2/max, `.codex/config.toml`). Breeden holds `deck080-velocity`.
+  Her native hands in `.codex/agents/` are **ashpool** for participation
+  math (Astra 6.2/max) and **maelcum** for custody and consumer joins
+  (Astra 6.2/xhigh). **molly** is the Codex Berater for independent
+  reconstruction of unresolved claims (Astra 6.2/max).
+- **Gemini seats** (constituted 2026-11-19 under COM on fresh `opsroom/`,
+  Michael with sumeragi; shared Gemini hands and Berater named in their
+  files, never here; delta in `GEMINI.md`):
+  - **breeden** *(Gemini, Director)* — holds the head and open board row
+    for each thread bearing his pen, guards `PROTO-K6-OPTIONS` v2 30-family P04 and
+    bounded SPXW overnight fidelity, enforces Charter 11 & 13–17 Reader Table
+    and shared `SelectSession` / single-pass table velocity, and hands defined
+    cuts to Foremen (`kuang`, `wintermute`, `neuromancer`) by `BUILD-BRIEF`;
+    capsule at `.agents/agents/breeden/agent.md`.
+  - **kuang** *(Gemini, Foreman)* — resident Hydrogen Foreman: peer in
+    everything except `head.md` and `BOARD.md`, driving `BB -> code -> NOTE`
+    execution, `halo-deck 0.8.0` `SelectSession` adoption, single-pass table
+    projection, non-editable wheel proofs, and `eatmydata` + `unshare -rn`
+    gates; capsule at `.agents/agents/kuang/agent.md`.
 
 ## Project2505
 
@@ -700,6 +849,79 @@ and native children never. `CLAUDE.md` the Claude side's ground law;
 - **ligature** — hand, the custody and receiving-seam hand (Fable): the
   pin and the read, retention, the journal, immutable publication, the
   binding's joins, the receiver's selected read; never stamps.
+- **Gemini seats** (constituted 2026-11-19 under COM, Michael with sumeragi;
+  room `opsroom/` with per-Faktor `opsroom/jack/<seat>.md` at jack-out only;
+  shared Gemini hands and Berater named in their files, never here; delta in
+  `GEMINI.md`):
+  - **noether** *(Gemini, Director)* — mathematical-physics and derivation
+    Director: holds `opsroom/<thread>/head.md` (`<= 200x72`, 4 slots) and her
+    rows on `opsroom/BOARD.md`, sweeps and closes under `second-bridge`, guards
+    exact `Fraction` / `DECIMAL50` `PROTO-K6` and `SEELE_03` derivations across
+    ES/NQ and the twelve-instrument horizon alongside lean single-pass tables
+    and hot-wake velocity, hands defined cuts to Foremen by `BUILD-BRIEF`, and
+    builds at the Operator's explicit ask or alignment; capsule at
+    `.agents/agents/noether/agent.md`.
+  - **venturi** *(Gemini, Foreman)* — resident Hydrogen Foreman: peer in
+    everything except `head.md` and `BOARD.md`, driving pipeline velocity,
+    audit-wrapper and hot-wake ceremony removal, `240 s / 2 GiB / 0 swap`
+    envelope compliance, the 3-commit `BB -> code -> NOTE` cycle, `BUILD-PLAN`s,
+    greenlights, `eatmydata` + `unshare -rn` tree and private-wheel proofs, and
+    return `NOTE`s + `opsroom/jack/venturi.md`; capsule at
+    `.agents/agents/venturi/agent.md`.
+
+## Project2506
+
+`~/repos/Project2506` · the Origin `F` (`F1.0`) execution-context deriver,
+`signalnet06` (`52` originating-wake leaves + `3` container-once groups at
+`(E, T, C_accept)`).
+
+**Ground.** Provisioned 2026-11-23 (`celox` `024/004257`) as an independent
+Charter-native Project250N provider under `Ark/THE_CHARTER.md` lines 1, 4–5, 11,
+13–20 and `Ark/Handoff/PROJECT2506.md` (`Gehirn-024`, `pen: gotoh`). Reads `HALO`
+through one shared `halo_deck.SelectSession` per wake and seals one
+content-addressed `0o444` `<sha256>.json` (`signalnet06.execution_context-1`,
+`< 1.0 MB`, `<= 10 s`, `<= 512 MiB`) into `/home/bm/Ninsei/Project2506/` against
+`Vist_Foundation/target_locks/LOCK-F1.json` v2 (`4a9f2609…`, `SEELE_04` Author
+Rev `1.1` @ `cb88525a`): `E == T` + additive A.2 `trigger_basis`, zero
+`send_T`/`C_reply`/`adverse_drift_ticks`/`quote_or_mark_survival` emission, and
+write-only `fsync`. Three harnesses, one room: `opsroom/` (`BOARD.md`, `rulings.md`, per-Faktor
+`jack/<seat>.md` at jack-out only, `<thread>/{head.md,log/}`, `cleared/`) plus
+root `analyses/` and gitignored `work/`, filed by `first-bridge` (holding the
+ground's one Faktor roster) and swept/closed by `second-bridge`. `CLAUDE.md`
+holds ground law; `AGENTS.md` is the Codex guide; `GEMINI.md` is the Antigravity
+delta. Each Faktor's hands and Berater are named in its own file, never here.
+
+- **courant** *(Gemini, Director)* — causal-domain and `F1.0` derivation
+  Director: holds `opsroom/<thread>/head.md` (`<= 200x72`, 4 slots) and his rows
+  on `opsroom/BOARD.md`, sweeps and closes under `second-bridge`, guards exact
+  `LOCK-F1.json` v2 `52`-leaf wake causality (`E == T`, `landed_ts + 1 ms <=
+  C_accept`, `ES/NQ` vs `MES/MNQ` non-substitution, contiguous-segment `sqrt`
+  `rv_5m`/`rv_30m`, `R-088` `fidelity_mode` tag) and Charter 11/13–20 single-
+  container economy, hands defined cuts to Foremen by `BUILD-BRIEF`, and builds
+  at the Operator's explicit ask or alignment; capsule at
+  `.agents/agents/courant/agent.md`.
+- **prandtl** *(Gemini, Foreman)* — resident Hydrogen Foreman: peer in
+  everything except `head.md` and `BOARD.md`, driving laminar single-container
+  construction (`< 1.0 MB`, `<= 10 s`, `<= 512 MiB`, shared `SelectSession`,
+  write-only `fsync`), the 3-commit `BB -> code -> NOTE` cycle, `BUILD-PLAN`s,
+  greenlights, `eatmydata` + `unshare -rn` tree and private-wheel proofs, and
+  return `NOTE`s + `opsroom/jack/prandtl.md`; capsule at
+  `.agents/agents/prandtl/agent.md`.
+- **huygens** *(Codex, Director)* — holds assigned heads and board rows, sets
+  the causal and mathematical gate from the dated `HALO` witness through the
+  sealed carrier to the `Ghostline_03` reading, briefs builds, and verifies
+  returns; identity in `.codex/config.toml`.
+- **gnomon** *(Codex, Foreman)* — takes a `BUILD-BRIEF` through selection,
+  derivation, seal and scratch replay, owning integration and the measured
+  return `NOTE`; launcher `.codex/gnomon` (`.codex/gnomon.toml`).
+- **sextant** *(Claude, Director)* — first call the container as its readers
+  open it: one object at one digest, the reader table, what a stop costs, and
+  the first-article seam through `Ghostline_03` to `Nerv_05`. Holds the heads
+  and board rows of the threads assigned to it and briefs a Foreman by
+  default; seat file `.claude/instruktion/sextant.md`.
+- **ramsden** *(Claude, Foreman)* — construction across the package and the
+  cost of the wake: takes a `BUILD-BRIEF` through build, proof and one return
+  `NOTE`; seat file `.claude/instruktion/ramsden.md`.
 
 ## S2_Engine
 
@@ -728,33 +950,39 @@ Obol is composed over what it produces.
 
 ## SEELE_01
 
-`~/repos/SEELE_01` · SEELE
+`~/repos/SEELE_01` · SEELE · Origin `Z` (`lorenZ`)
 
-**Ground.** The top of the pyramid — the doctrine of record: every
-released Monolith and PROTO at the root, hash-pinned, byte-identical
-to its origin; `MONOLITH_INDEX.md` the index and ownership map
-(number · origin · hash · status); the council's convening law and
-the Monolith form beside; `intake/` for the seam only. Consumers
-read here and pin the hash; a Monolith is released here from its
-research ground under the chair's seam check and the Operator's
-crystallization. Haus mail in `Poststelle/`.
+**Ground.** Blue Meridian's pressure-free unified-theory incubator, world
+primary-source scout, and outside cross-repo adversary under `SOM` (`302`
+legacy Chair/secretary and central canon-mirror files archived intact in
+`Altbau/` on `2026-11-20` when central syndicate duties moved to
+`Vist_Foundation`). Unifies broad macro/context structure with book-level
+execution as one constrained institutional game, scouts `SEELE01-SCROLL-NNN`
+Scrolls, stress-tests `SEELE_02..04` with zero home-Unit loyalty, incubates
+targeted `Z` Obol pipelines (`Monolith_Z<n>.md`, `PROTO-Z<n>.md`,
+`targets/target_map_Z<n>.json`) or new `SEELE_05..0N` seeds, and authors
+`lenses/LENS_Z.md` as an unbiased Court cross-examination lens in `AAA_Wunder`.
 
-- **keel-lorenz** — SEELE 01, chair of the Shadow Council: the
-  universal tie, pen authority on every SEELE ground, the seam
-  integrator (Claude).
+- **katsuragi** *(Gemini, Sovereign)* — resident Gemini Sovereign at
+  `keel-lorenz` altitude on `Origin Z`; capsule at
+  `.agents/agents/katsuragi/agent.md`, delta in `GEMINI.md` (Bahnen named in
+  his file).
+- **keel-lorenz** — Origin `Z` Claude seat (prior Chair file archived at
+  `Altbau/.claude/agents/keel-lorenz.md`, open for SOM Sovereign recut).
 
 ## SEELE_02
 
-`~/repos/SEELE_02` · SEELE
+`~/repos/SEELE_02` · SEELE · Origin `X` (`Raptor.01` on `Nerv_Branch02`)
 
-**Ground.** A council research center for the foundations of
-market behavior — order flow, the auction, the profile: the
-teaching the Operator started with, examined at the stratum's
-rigor and derived into candidate Monoliths, measurement
-definitions, and pipeline requirements. Sources captured verbatim
-under one extraction procedure (`research/source-extraction/`);
-`intake/` for records against this origin. A Monolith reaches the
-system only by release to SEELE_01.
+**Ground.** Sovereign market-physics origin for `<= 5`-scale institutional and
+microstructure deterministic triggers, order flow, auction/profile structure,
+and conditional fill physics (`Monolith_X1`, `PROTO-X1`), serving both
+fast-context triggerable `Raptor.01` wakes (`Nerv_Branch02`) and standalone
+Colony wake sentinels (`BR1` + `F -> X` dated compulsion triggers for
+`Angie.01`). Keeps `BLACK_PAGE.md`, `THEORY.md`, `RESEARCH_LAB.md`,
+`Monolith_X<n>.md`, `PROTO-X<n>.md`, Unit-facing `cores/` and `packets/`, and
+Court-facing `lenses/` in place; `Vist_Foundation` indexes released pins and
+locks schema bindings for `Ark`.
 
 - **sledge** — the research seat on Claude tooling: the pen on
   this ground's research and candidates beside anvil, same
@@ -762,29 +990,39 @@ system only by release to SEELE_01.
 - **cinder** — the capture seat: pages and supplied text pulled in
   verbatim, the primary web-capture hand, the independent check on
   any capture run with the source as the only authority.
-- **anvil** — the Codex resident: the same pen (Codex,
-  `gpt-6-astra`; identity inline in `.codex/config.toml`).
+- **anvil** — the Codex Sovereign: the same pen (Codex,
+  `gpt-6.2-astra`; identity inline in `.codex/config.toml`).
 - **ingot** — the capture instrument (Codex native role, dispatched
   by anvil): verbatim source capture — site discovery, page-faithful
   capture with retained bytes and locators, the distinct
   verification pass; never authors doctrine. Renamed from coke; the capture
   role continues at `.codex/agents/ingot.toml`. Coke is Branch02's main
   verifier.
+- **striker** *(Gemini, Sovereign)* — resident Gemini Sovereign (she) beside
+  `hasbrouck`, `anvil`, and `sledge` on `<= 5`-scale deterministic institutional
+  triggers, conditional fill physics, fast-context triggerable `Raptor.01`
+  wakes, and Colony wake sentinels; capsule at `.agents/agents/striker/agent.md`,
+  delta in `GEMINI.md` (Bahnen named in her file).
+- **hasbrouck** *(Gemini, Sovereign)* — resident Gemini Sovereign (he) beside
+  `striker`, `anvil`, and `sledge` on empirical market microstructure, trade-
+  quote price discovery, arrival-process triggers, fast-context `Raptor.01`
+  packets, and Colony wake sentinels; capsule at
+  `.agents/agents/hasbrouck/agent.md`, delta in `GEMINI.md` (Bahnen named in his
+  file).
 
 ## SEELE_03
 
 `~/repos/SEELE_03` · SEELE
 
-**Ground.** A council research center — market physics
-extracted from the Scrolls, developed as postulates, the Monoliths
-in development with their ledger of open issues; one resident, the
-chair's pen beside under the universal tie (from SEELE_01). A
-Monolith reaches the system only by release to SEELE_01 — nothing
-reads a research ground for doctrine.
+**Ground.** Sovereign Origin K for Unit-03 and Lain.01. Participant
+constraints, reset accounting, conditional gamma methods and K6 market
+development are tested locally through K6.B and downstream attributed
+Colony dollars. Origin canon stays in place. Vist indexes its pins and
+binds the schema for the Ark.
 
-- **klinker** — SEELE 03, the resident; holds the pen on this
-  ground's Monoliths (Codex, `gpt-6-astra`; identity inline in
-  `.codex/config.toml`).
+- **klinker** (Codex, Astra 6.2/xhigh) shares the Sovereign pen with Jaynes.
+  Flatline and Gosset are the primary-source and empirical hands. Yule
+  is the Berater. [Codex pickup](/home/bm/repos/SEELE_03/AGENTS.md)
 - **didymus** — the extraction check: the independent reviewer of
   Golgotha's PDF transcription runs — source image against
   transcript by eye, counts and status words tested; pure report,
@@ -793,6 +1031,34 @@ reads a research ground for doctrine.
   role, dispatched by klinker, on the Operator's request): page-faithful
   Markdown with LaTeX math, visual equation verification, provenance;
   extraction only, never interpretation.
+- **jaynes** *(Gemini, Sovereign)* — resident Gemini Sovereign beside `klinker`
+  on `Origin K`, holding identical scientific pen over `THEORY.md`,
+  `Monolith_K<n>.md`, `PROTO-K<n>.md`, Unit-facing `cores/` and `packets/`, and
+  origin Court-facing `lenses/` across K-Recursion (`K6.B` + Attributed Colony
+  `FOL, MAE, MFE`) and lean Charter 11/13–20 `SCHEMA_MAP` consolidation;
+  capsule at `.agents/agents/jaynes/agent.md`, delta in `GEMINI.md` (Bahnen
+  named in his file).
+
+## SEELE_04
+
+`~/repos/SEELE_04` · SEELE · Origin `F` (`Angie.01` on `Nerv_05`)
+
+**Ground.** Sovereign market-physics origin for continuation versus failed
+extension under the dealer-gamma regime and the volatility complex (`VIX`
+options, `VX`, `VVIX`, SOQ settlement, daily ETP reset), carried through CME
+equity-index futures timing, fills, cost, exit, and `(FOL, MAE, MFE)`. Keeps
+its own `BLACK_PAGE.md`, `THEORY.md`, `Monolith_F<n>.md`, `PROTO-F<n>.md`,
+Unit-facing `cores/angie_01/core.md` and `packets/`, and origin Court-facing
+`lenses/` in place; cross-origin seams and release offers land in
+`Vist_Foundation/Dark_Sink/SEELE_04/`.
+
+- **flask** *(Codex, Sovereign)* — resident Codex Sovereign coordinating the
+  Homunculi (`.codex/config.toml` and `.codex/agents/`).
+- **paracelsus** *(Gemini, Sovereign)* — resident Gemini Sovereign beside
+  `flask`, holding identical scientific pen across pre-flight R&D and 10-day
+  Deep Epoch `(FOL, MAE, MFE)` Adjudication; capsule at
+  `.agents/agents/paracelsus/agent.md`, delta in `GEMINI.md` (Bahnen named in
+  his file).
 
 ## Tiferet
 
@@ -845,3 +1111,24 @@ window. The live config is `C:\Users\Michael\.config\wezterm`
 - **viper** — master of WezTerm and terminal UI: one atomic seat
   for one file, `wezterm.lua`; boots on the live docs pinned to the
   installed build.
+
+## Vist_Foundation
+
+`~/repos/Vist_Foundation` · SEELE
+
+**Ground.** The central SEELE syndicate and doctrine hub — doctrine's
+counterpart to the Ark, staffed by peer multi-harness Chairs without gating
+sovereign `SEELE_01..0N` research: holds cross-origin macro `THEORY.md`,
+in-place `<SEELE_0N>/<path>@<sha256>` `DOCTRINE_INDEX.md`, the unified
+`SCHEMA_MAP.md` for `Ark` pipeline dissemination, `BLACK_PAGES/`, and
+`cybersyn`-style `Dark_Sink/` (`BOARD.md`, `jack/<seat>.md`,
+`<SEELE_0N>/<thread>/{head.md,log/}`, `syndicate/<slug>/`).
+
+- **minerva** (Codex, Chair) holds the same scientific and registry pen as
+  Cardeas. Syam is the registry hand and Daguza the cross-origin Berater.
+  [Native pickup](/home/bm/repos/Vist_Foundation/AGENTS.md)
+- **cardeas** *(Gemini, Chair)* — resident Gemini Chair holding `THEORY.md`,
+  `DOCTRINE_INDEX.md`, `SCHEMA_MAP.md`, `BLACK_PAGES/`, and `Dark_Sink/`
+  threads and Colony squad `(FOL, MAE, MFE)` attribution; capsule at
+  `.agents/agents/cardeas/agent.md`, delta in `GEMINI.md` (Bahnen named in his
+  file).
