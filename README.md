@@ -111,6 +111,14 @@ is enough).
 | telecine | Ghostline_03 | | timecode | Ghostline_03 |
 | huygens | Project2506 | | gnomon | Project2506 |
 | aldus | Ghostline_03 | | caxton | Ghostline_03 |
+| penpen | Armament_Grid | | bowtie | Armament_Grid |
+| pathfinder | Armament_Grid | | meiko | Armament_Grid |
+| takina | Armament_Grid | | kurumi | Armament_Grid |
+| vanguard | Armament_Grid | | pioneer | Armament_Grid |
+| deadeye | Armament_Grid | | sylia | Armament_Grid |
+| priss | Armament_Grid | | nene | Armament_Grid |
+| noble-six | Armament_Grid | | emile | Armament_Grid |
+| jun | Armament_Grid | | | |
 
 ## By planet (scan)
 
@@ -118,7 +126,7 @@ is enough).
 |---|---|---|---|
 | [AAA_Wunder](#aaa_wunder) | `~/repos/AAA_Wunder` | Technical | saratoga · wildcat · hornet · sears |
 | [Ark](#ark) | `~/repos/Ark` | EXEC | gendo · cartographer · aramaki · gotoh (Gemini) · nagumo (Gemini) |
-| [Armament_Grid](#armament_grid) | `~/repos/Armament_Grid` | CENTCOM + Tactical | hazop · misato · venator |
+| [Armament_Grid](#armament_grid) | `~/repos/Armament_Grid` | CENTCOM + Tactical | misato (Director) · meiko (Gemini, Director) · sylia (Codex, Director/Foreman) · penpen (Foreman) · takina (Gemini, Foreman) · priss (Codex, Foreman) · bowtie (Berater) · kurumi (Gemini, Berater) · nene (Codex, Berater) · hazop (Director) · vanguard (Gemini, Director) · noble-six (Codex, Director/Foreman) · venator (Foreman) · pioneer (Gemini, Foreman) · emile (Codex, Foreman) · pathfinder (Berater) · deadeye (Gemini, Berater) · jun (Codex, Berater) |
 | [Gewebe](#gewebe) | `~/repos/Gewebe` | S.C. | — (the MAGI, from Magi) |
 | [Ghostline_01](#ghostline_01) | `~/repos/Ghostline_01` | ? | — (frozen; Branch-01's, read-only) |
 | [Ghostline_02](#ghostline_02) | `~/repos/Ghostline_02` | ? | bluebox · 0xWIRE (Codex) · crossbar (Gemini) · vblank · phosphor (Gemini) |
@@ -231,7 +239,9 @@ mail converges directly into `Gehirn/Gehirn-NNN/log/` (`Parkplatz/` for `PARK`,
 
 ## Armament_Grid
 
-`~/repos/Armament_Grid` · CENTCOM + Tactical · queue `BATTERY-NNN`
+`~/repos/Armament_Grid` · CENTCOM + Tactical · room `opsroom/` (since
+2026-11-23; the old room's open threads stay in `Baustelle/` until each
+Director's sort)
 
 **Ground.** The far side of the order bus: the Concealed Battery (the
 armor — the check chains, the account law, the fill capture) and the
@@ -240,14 +250,79 @@ By the Operator's ruling of 2026-11-12 the Grid runs its own console
 for its own hulls (THE_CHARTER line 2); none stands yet, and its
 replicator hull is held unarmed.
 
-- **hazop** — CENTCOM: sole custodian of the NinjaTrader platform
-  connection, the system's one door to the exchange side (Carrier
-  Radar).
-- **misato** — Tactical: the Concealed Battery and G-Type Equipment
-  (`C:\GTypeEquipment`, the Kasematte — the one Windows surface); one
-  jurisdiction, two grounds. The bus's consumer shape is hers.
-- **venator** — the grid's integration seat and standing check, the
-  third resident beside hazop and misato.
+- **hazop** *(Claude, Director)* — CENTCOM: co-custodian (with vanguard and noble-six) of
+  the NinjaTrader platform connection, the system's one door to the exchange
+  side, and the Carrier Radar with its capture archive. Holds Centcom's
+  heads and board rows; seat file `.claude/instruktion/hazop.md`.
+- **venator** *(Claude, Foreman)* — CENTCOM: builds the Radar, the capture
+  organ, the decoder, the replicator and the probe from a `BUILD-BRIEF`, and
+  is the second seat on Centcom's Director builds; seat file
+  `.claude/instruktion/venator.md`.
+- **pathfinder** *(Claude, Berater)* — CENTCOM: one stretch of the capture,
+  or one claim about the door, followed to the outside witness that could
+  contradict it, on call for hazop or venator; `.claude/agents/pathfinder.md`.
+- **vanguard** *(Gemini, Director)* — CENTCOM: co-equal Director alongside
+  hazop over NinjaTrader 8 connection custody, the platform door (full
+  door-entry parity ahead of the Operator's hand), the Carrier Radar
+  forward-capture collector, the archive contract, the pinned decoder and the
+  HALO replicator; holds Centcom's `opsroom/<thread>/head.md` and `BOARD.md`
+  rows, briefs pioneer and venator, and verifies returns against external
+  witnesses; capsule at `.agents/agents/vanguard/agent.md`, delta in
+  `GEMINI.md`.
+- **pioneer** *(Gemini, Foreman)* — CENTCOM: peer in everything except
+  `head.md` and `BOARD.md`, building the Radar, `CaptureCore`,
+  `RadarCaptureDecode`, `capture_replicate`, `GridCustodyProbe`, `Pruefstand`
+  and shared seams directly at its Werkbank from a `BUILD-BRIEF`, and serving
+  as second seat on peer work; capsule at `.agents/agents/pioneer/agent.md`.
+- **deadeye** *(Gemini, Berater)* — CENTCOM: one capture stretch or
+  platform-door claim traced hop by hop from callback to sealed bytes, replica
+  and decoder against an independent outside witness, on call for vanguard or
+  pioneer; `.agents/agents/deadeye/agent.md`.
+- **noble-six** *(Codex, Director / thread Foreman)* — CENTCOM. Shares door
+  custody with hazop and vanguard, directs the threads he holds, and builds
+  a peer's brief. Open with `codex -C ~/repos/Armament_Grid/Centcom`.
+- **emile** *(Codex, Foreman)* — CENTCOM. Builds or independently checks the
+  collector, recovery, decoder and HALO receipt path. Native role `emile`,
+  also available at `.codex/foreman Centcom` from the repository root.
+- **jun** *(Codex, Berater)* — CENTCOM. Traces a disputed capture or door
+  claim to an external witness. `Centcom/.codex/agents/jun.toml`.
+- **misato** *(Claude, Director)* — Tactical: the Concealed Battery and
+  G-Type Equipment (`C:\GTypeEquipment`, the Kasematte — the one Windows
+  surface); one jurisdiction, two grounds. The bus's consumer shape is
+  hers. Holds Tactical's heads and board rows; seat file
+  `.claude/instruktion/misato.md`.
+- **penpen** *(Claude, Foreman)* — Tactical: builds the Battery, the hoist
+  and their seat-side tools from a `BUILD-BRIEF`, and is the second seat on
+  misato's own builds; seat file `.claude/instruktion/penpen.md`.
+- **bowtie** *(Claude, Berater)* — Tactical: one order path followed to its
+  worst case, on call for misato or penpen; `.claude/agents/bowtie.md`.
+- **meiko** *(Gemini, Director)* — Tactical: co-equal Director alongside
+  misato over the Concealed Battery, HeavyArmor account protection, dynamic
+  multi-account/multi-unit order routing, G-Type status synchronization and
+  the Munitionsaufzug WAN wire; holds Tactical's `opsroom/<thread>/head.md`
+  and `BOARD.md` rows, briefs takina and penpen, and verifies returns at raw
+  platform evidence; capsule at `.agents/agents/meiko/agent.md`, delta in
+  `GEMINI.md`.
+- **takina** *(Gemini, Foreman)* — Tactical: peer in everything except
+  `head.md` and `BOARD.md`, building the Battery, the hoist, shared seams and
+  seat-side tools directly at her Werkbank from a `BUILD-BRIEF`, and serving
+  as second seat on peer order-path builds; capsule at
+  `.agents/agents/takina/agent.md`.
+- **kurumi** *(Gemini, Berater)* — Tactical: one order, lock, multi-account
+  or WAN synchronization path traced to its worst-case bow-tie state, on call
+  for meiko or takina; `.agents/agents/kurumi/agent.md`.
+- **sylia** *(Codex, Director / thread Foreman)* — Tactical. Directs held
+  threads and builds a peer's brief across Battery enforcement, account
+  routing and the G-Type bus. Open with `codex -C ~/repos/Armament_Grid/Tactical`.
+- **priss** *(Codex, Foreman)* — Tactical. Builds or independently checks
+  a Battery or hoist cut through the producer's read. Native role `priss`,
+  also available at `.codex/foreman Tactical` from the repository root.
+- **nene** *(Codex, Berater)* — Tactical. Reconstructs disputed order or
+  delivery histories from the ledger, broker and producer evidence.
+  `Tactical/.codex/agents/nene.toml`.
+- **The seams** (`GridCommon`, the contract map, the deploy) are held by
+  both divisions, with no lane: whichever seat the Operator is working
+  with takes the change (2026-11-23).
 
 ## Gewebe
 
